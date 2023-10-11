@@ -8,3 +8,5 @@ When you open the link, please save a copy of the notebook to your own google dr
 
 When you begin to run the notebook, change runtime type to GPU.
 
+
+![NNV](nnv.png)
