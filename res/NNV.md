@@ -6,3 +6,5 @@ Try to play the code here [Colab](https://colab.research.google.com/drive/1KeoHV
 
 When you open the link, please save a copy of the notebook to your own google drive, and then you could modify and run the codes.
 
+When you begin to run the notebook, change runtime type to GPU.
+
