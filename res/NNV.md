@@ -8,5 +8,6 @@ When you open the link, please save a copy of the notebook to your own google dr
 
 When you begin to run the notebook, change runtime type to GPU.
 
+Slides for the presentation could be find [here](../file/10-11-SE4ML-NNV.pdf).
 
 ![NNV](nnv.png)
