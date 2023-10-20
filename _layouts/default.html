@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel='icon' href='../file/uva.ico' type=‘image/x-ico’ />
-{% seo %}
+    {% seo %}
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
@@ -15,23 +16,28 @@
     <![endif]-->
 
     {% include head-custom.html %}
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="wrapper">
-      <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
-      </header>
-      <section>
-
-      {{ content }}
-
-      </section>
+        <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless
+            %}>
+            <h1>{{ site.title | default: site.github.repository_name }}</h1>
+            {% if site.description or site.github.project_tagline %}
+            <p>{{ site.description | default: site.github.project_tagline }}</p>
+            {% endif %}
+        </header>
+        <section>
+            {{ content }}
+        </section>
     </div>
     <footer>
-    {% if site.github.is_project_page %}
-      <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-    {% endif %}
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+        {% if site.github.is_project_page %}
+        <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
+</body>
+
 </html>
