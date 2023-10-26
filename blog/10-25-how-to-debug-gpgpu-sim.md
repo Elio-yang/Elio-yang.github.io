@@ -6,7 +6,7 @@ When debuging GPGPU-Sim, the first thing is compile the whole project under `deb
 
 As for making break point, one method is break at file line level, like `b gpgpusim_entrypoint.cc:199`, which is the `struct _cuda_device_id *gpgpu_context::GPGPUSim_Init()` function, it's the logical entry point of the whole simualtion.
 
-Inside gdb, we could use `info frame` to check the current stack and previous stack, use `up` could jumped to previous stack frame, and `domn` could jump to the next. It's useful if we want to track the function calls.
+Inside gdb, we could use `info frame` to check the current stack and previous stack, use `up` could jumped to previous stack frame, and `domn` could jump to the next. It's useful if we want to track the function calls. You could also use `bt` to show all the stack frames.
 
 ## Add Log library
 
