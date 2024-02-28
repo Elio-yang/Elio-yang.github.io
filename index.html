@@ -21,8 +21,12 @@
 			body{
 				background-color:azure
 			}
-		</style>
 
+			.sim-link {
+	  			padding-left: 7px;
+			}
+  		</style>
+	
 	</head>
 	
 	<body style="font-family: 'Nunito', Courier, monospace,helvetica; text-decoration:none; line-height: 100%">
@@ -198,11 +202,12 @@
 		<tr>
 			<td style="padding-top: 5px; padding-left: 15px;">
 				<b>Jilin University Undergraduate Academic Year Fellowship:</b></br>
-					
-				&ensp;&ensp; &ensp;Fall 2020, The First Class Fellowship</br>
-				&ensp;&ensp; &ensp;Fall 2021, The Second Class Fellowship</br>
-				&ensp;&ensp; &ensp;Fall 2022, The Third Class Fellowship</br>
-				&ensp;&ensp; &ensp;Fall 2023, The Third Class Fellowship</br>
+				<ul style="list-style-type:none">
+					<li class="sim-link">Fall 2020, The First Class Fellowship</li>
+					<li class="sim-link">Fall 2021, The Second Class Fellowship</li>
+					<li class="sim-link">Fall 2022, The Third Class Fellowship</li>
+					<li class="sim-link">Fall 2023, The Fourth Class Fellowship</li>
+				</ul>
 			</td>
 		</tr>
 	</tbody></table>
@@ -210,6 +215,52 @@
 	<p>&nbsp;</p>	
 	<p><hr></p>
 
+	<table style="padding-left: 5px; font-size: 16px;" bordercolor="white" border="0">
+		<tbody><tr>
+			<td>
+				<big style="color: rgb(255, 102, 0);"><b>Useful Tools</b></big>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-top: 5px; padding-left: 15px;">
+				<br>
+				GPU simulation:
+				<ul style="list-style-type:none">
+					<li class="sim-link">[<a href="https://github.com/gpgpu-sim/gpgpu-sim_distribution">GPGPU-Sim</a>]</li>
+					<li class="sim-link">[<a href="https://github.com/CMU-SAFARI/Mosaic">Mosaic (virtual memory support)</a>]</li>
+					<li class="sim-link">[<a href="https://github.com/DebashisGanguly/gpgpu-sim_UVMSmart">UVMSmart (unified virtual memory support)</a>]</li>
+					<li class="sim-link">[<a href="https://github.com/adwaitjog/mafia">MAFIA (multi-tenant support)</a>]</li>
+					<li class="sim-link">[<a href="https://www.cs.sjtu.edu.cn/~leng-jw/release/release/gpuvolt.html">GPUVolt (PDN and voltage noise)</a>]</li>
+					<li class="sim-link">[<a href="https://gitlab.com/akita/mgpusim">MGPUSim (multi-GPU support)</a>]</li>
+					<li class="sim-link">[<a href="https://github.com/csl-iisc/MGVM-MICRO2022">MGVM (MCM-GPU virtual memory support)</a>]</li>
+					<li class="sim-link">[<a href="https://github.com/platformxlab/G10">G10 (GPU UVM with SSD support)</a>]</li>
+				</ul>
+			</br>
+				SSD simulation: 
+				<ul style="list-style-type:none">
+					<li class="sim-link">[<a href="https://github.com/CMU-SAFARI/MQSim">MQSim</a>]</li>
+					<li class="sim-link">[<a href="https://github.com/spypaul/MQSim_CXL">MQSim-CXL (CXL support)</a>]</li>
+				</ul>
+			</br>
+				CUDA Low-level:
+				<ul style="list-style-type:none">
+					<li class="sim-link">[<a href="https://github.com/NVlabs/NVBit">NVBit</a>]</li>
+					<li class="sim-link">[<a href="https://github.com/UniHD-CEG/cuda-flux">CUDAFlux</a>]</li>
+					<li class="sim-link">[<a href="https://github.com/NervanaSystems/maxas">MaxAs</a>]</li>
+					<li class="sim-link">[<a href="https://github.com/daadaada/turingas">TuringAs</a>]</li>
+					<li class="sim-link">[<a href="https://github.com/openppl-public/CuAssembler">CuAssembler</a>]</li>
+					<li class="sim-link">[<a href="https://github.com/decodecudabinary/Decoding-CUDA-Binary">Decoding-CUDA-Binary</a>]</li>
+				</ul>
+			</br>
+				CXL:
+				<ul style="list-style-type:none">
+					<li class="sim-link">[<a href="https://github.com/SlugLab/CXLMemSim">CXLMemSim</a>]</li>
+				</ul>
+		</br>
+		
+		</td>
+		</tr>
+	</tbody></table>
 
 
 	<table style="padding-left: 5px; font-size: 16px;" bordercolor="white" border="0">
@@ -232,7 +283,7 @@
 			</br>
 				[02/16/2024] Linux memory management: [<a href="https://docs.kernel.org/mm/index.html">Docs</a>]
 			</br>
-				[02/16/2024] How to check page mapping: [<a href="https://github.com/dwks/pagemap">Codes</a>]
+				[02/16/2024] Page mapping: [<a href="https://github.com/dwks/pagemap">Codes</a>]
 			</br>
 				[02/16/2024] How to access Linux physical memory (/dev/mem): [<a href="https://github.com/radii/devmem2">Codes</a>] [<a href="https://bakhi.github.io/devmem/">Blog</a>]
 			</br>
