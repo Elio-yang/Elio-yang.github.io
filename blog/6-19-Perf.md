@@ -8,3 +8,5 @@
 - [cxl-ae](https://github.com/ece-fast-lab/cxl_type3_tests)
 - [Blog: System Performance Analysis](https://zhuanlan.zhihu.com/p/661306091)
 - [Blog: How to Measure Performance](https://zhuanlan.zhihu.com/p/693762038)
+-[Performance Analysis and Tuning on Modern CPU](https://github.com/dendibakh/perf-book)
+-[Intel Xeon Tuning Guides](https://www.intel.com/content/www/us/en/developer/articles/guide/xeon-performance-tuning-and-solution-guides.html)
