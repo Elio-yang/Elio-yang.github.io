@@ -8,6 +8,8 @@
 - [cxl-ae](https://github.com/ece-fast-lab/cxl_type3_tests)
 - [Blog: System Performance Analysis](https://zhuanlan.zhihu.com/p/661306091)
 - [Blog: How to Measure Performance](https://zhuanlan.zhihu.com/p/693762038)
+- [RDTSC Instruction](https://www.ccsl.carleton.ca/~jamuir/rdtscpm1.pdf)
 - [Performance Analysis and Tuning on Modern CPU](https://github.com/dendibakh/perf-book)
 - [BPF Performance Tools](https://github.com/brendangregg/bpf-perf-tools-book)
 - [System Performance](https://www.brendangregg.com/blog/2020-07-15/systems-performance-2nd-edition.html)
+
