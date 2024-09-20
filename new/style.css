@@ -1,0 +1,106 @@
+
+<html>
+<head>
+<title>Mingxun Zhou (周铭洵)</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header"><h2>Mingxun Zhou (周铭洵)</h2>
+
+  <div id="contact">
+    <table width="600px"><tr valign="top"><td width="300px"><b>Email:</b> mingxunz at andrew.cmu.edu
+<br/><b>Office:</b> CIC 2225E
+<br/>[<a href="Mingxun_Zhou_CV.pdf">CV</a>]<td>
+<td>Carnegie Mellon University
+<br/>5000 Forbes Avenue
+<br/>Pittsburgh, PA 15213</td></tr>
+    </table>
+  </div>
+
+</div>
+
+<div id="photo">
+<img src="photo.jpg" width="100px">
+</div>
+
+
+
+<div id="content">
+Hi, I'm a PhD student in the <a href="http://www.csd.cs.cmu.edu/">Computer Science Department</a> at <a href="http://www.cmu.edu/">Carnegie Mellon University</a>. I'm being advised by <a href="https://www.andrew.cmu.edu/user/gfanti/">Giulia Fanti</a> and <a href="http://elaineshi.com/">Elaine Shi</a>.
+<br>
+<br>
+Plan to graduate in 2025 and looking for a job :)
+
+<h3>Research Interests</h3>
+<br>
+I am interested in {efficiency, safety, privacy} x {information retrieval, data aggregation, AI/ML, etc}.
+<br>
+<br>
+I design algorithms and do implementations.
+
+<h3>Education</h3>
+
+I received my B.S. in Computer Science from <a href="http://english.pku.edu.cn/">Peking University</a>.
+
+<h3>Publications</h3>
+<ol>
+
+<li><strong>Mingxun Zhou</strong>, Elaine Shi, and Giulia Fanti. <a href="https://eprint.iacr.org/2023/1900">Conan: Distributed Proofs of Compliance for Anonymous Data Collection
+</a>, <strong> To appear at CCS 2024</strong></p></li>
+<li>Ashrujit Ghoshal, <strong>Mingxun Zhou</strong>, and Elaine Shi.(Randomized Author Order) <a href="https://eprint.iacr.org/2023/1574">Efficient Pre-processing PIR Without Public-Key Cryptography</a>, <strong>Eurocrypt 2024</strong>.</p></li>
+<li><strong>Mingxun Zhou</strong>, Mengshi Zhao, T-H. Hubert Chan, and Elaine Shi.(Randomized Author Order) <a href="https://eprint.iacr.org/2023/842">Advanced Composition Theorems for Differential Obliviousness</a>, <strong> ITCS 2024</strong>.</p></li>
+<li><strong>Mingxun Zhou</strong>, Andrew Park, Elaine Shi and Wenting Zheng. <a href="https://eprint.iacr.org/2023/452">Piano: Extremely Simple, Single-Server PIR with Sublinear Server Computation</a>, to appear at <strong>S&P 2024</strong>. </p></li>
+<li><strong>Mingxun Zhou</strong>, Elaine Shi, T-H. Hubert Chan, and Shir Maimon.(Randomized Author Order) <a href="https://eprint.iacr.org/2022/1357">A Theory of Composition for Differential Obliviousness</a>, <strong>Eurocrypt 2023</strong></p></li>
+<li><strong>Mingxun Zhou</strong>, W. Lin, Yiannis Tselekounis, and Elaine Shi.(Randomized Author Order) <a href="https://eprint.iacr.org/2022/609">Optimal Single-Server Private Information Retrieval</a>, <strong>Eurocrypt 2023</strong> </p></li>
+
+<li><p><strong>Mingxun Zhou*</strong>, Liyi Zeng*, Yilin Han, Peilun Li, Fan Long, Dong Zhou, Ivan Beschastnikh, and Ming Wu (*Equal Contribution). <a href="https://wuwuz.github.io">Mercury: Fast Transaction Broadcast in High Performance Blockchain System</a>, <strong>INFOCOM 2023</strong></p></li>
+
+<li><p><strong>Mingxun Zhou</strong>, Tianhao Wang, T-H. Hubert Chan, Giulia Fanti, and Elaine Shi. <a href="https://arxiv.org/pdf/2112.03449.pdf"> Locally Differentially Private Sparse Vector Aggregation</a>, <strong>S&P 2022</strong>.</p></li>
+
+<li><p>Charlie Hou*, <strong>Mingxun Zhou*</strong>, Yan Ji, Phil Daian, Florian Tramer, Giulia Fanti, and Ari Juels. (*Equal Contribution)<a href="https://arxiv.org/pdf/1912.01798.pdf">SquirRL: Automating Attack Analysis on
+Blockchain Incentive Mechanisms with Deep
+Reinforcement Learning</a>, <strong>NDSS 2021</strong>.[<a href="https://github.com/wuwuz/SquirRL">code</a>]</p></li>
+
+<li><p>Minmei Wang*, <strong>Mingxun Zhou*</strong>, Shouqian Shi, and Chen Qian. (*Euqal Contribution)<a href="http://www.vldb.org/pvldb/vol13/p197-wang.pdf"> Vacuum Filters: More Space-Efficient and Faster
+Replacement for Bloom and Cuckoo Filters</a>, <strong>VLDB 2020</strong>. [<a href="https://github.com/wuwuz/Vacuum-Filter">code</a>] </p></li>
+</ol>
+
+
+<h3>Preprints/Other Projects</h3>
+
+<ul>
+
+
+<li><strong>Mingxun Zhou</strong>, and Elaine Shi. <a href="https://eprint.iacr.org/2022/177.pdf">The Power of the Differentially Oblivious Shuffle in
+  Distributed Privacy Mechanisms</a>, 2022.</p></li>
+
+<li><p>VRecon: An Efficient Set Reconciliation Algorithm, <strong>Bachelor Thesis</strong>, 2021.</p></li>
+
+</ul>
+
+<h3>Presentations/Talks</h3>
+
+<ul>
+
+<li>"Advanced Composition Theorems for Differential Obliviousness" at ITCS, Jan. 2024 [<a href="https://www.youtube.com/watch?v=oq1jIpUAy-0">video</a>]</p></li>
+<li>"Recent Progress in Private Information Retrieval" at PKU, Jul. 2023 [<a href="https://www.bilibili.com/video/BV1gF411X7BF">video(中文视频)</a>]</p></li>
+<li>"Piano: Extremely Simple, Single-Server PIR with Sublinear Server Computation" at CMU Crypto Seminar, May 2023 [<a href="https://www.youtube.com/watch?v=WOvk7grf2H0">video</a>]</p></li>
+<li>"A Theory of Composition for Differential Obliviousness" at Eurocrypt, Apr 2023 [<a href="https://www.youtube.com/watch?v=Jw11hbyFTCk">video</a>]</p></li>
+<li>"Optimal Single-Server Private Information Retrieval" at CMU Theory Lunch, Sep. 2022 [<a href="https://www.youtube.com/watch?v=E0t_iogzOR4">video</a>]</p></li>
+<li>"The Power of the Differentially Oblivious Shuffle in Distributed Privacy Mechanisms" at the Symposium on Foundations of Responsible Computing, Jun. 2022 [<a href="https://www.youtube.com/watch?v=4WPkiz6yhvQ">video</a>]</p></li>
+<li>"Locally Differentially Private Sparse Vector Aggregation" at IEEE S&P, May 2022 [<a href="https://www.youtube.com/watch?v=d4TFqe7c_gs">video</a>]</p></li>
+<li>"SquirRL: Automating Attack Analysis on Blockchain Incentive Mechanisms with Deep Reinforcement Learning" at IJTCS, Aug. 2020 [<a href="https://www.bilibili.com/video/av202040234/">video</a>]</p></li>
+
+</ul>
+
+<h3>Others</h3>
+<ul>
+<li>If you find difficulty pronouncing my name, it is similar to "Ming-Shwin Joel" :)</li>
+</ul>
+
+</div>
+</div>
+</body>
+</html>
