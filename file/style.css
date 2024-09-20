@@ -1,0 +1,67 @@
+body {
+    font-size: 14px;
+    font-family: Arial;
+  }
+  
+  h2 {
+    font-family: "Arial", serif;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    font-size: 26px;
+  }
+  
+  h3 {
+    margin-top: 24px;
+    margin-bottom: 4px;
+  }
+  
+  a, a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #800;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  a:active {
+    font-weight: bold;
+    text-decoration: none;
+    color: #464646;
+  }
+  
+  table {
+    font-size: 100%;
+  }
+  
+  
+  #wrapper {
+    margin: 50px;
+  }
+  
+  #header {
+    float: left;
+    
+  }
+  
+  #photo {
+    float: right;
+    padding: 0px 30px 20px;
+  }
+  
+  #content {
+    clear: both;
+  }
+  
+  ul {
+      padding-left: 15px;
+  }​
+  
+  ul li {
+    margin: 0px;
+    padding: 0px;
+  }
