@@ -1,6 +1,7 @@
 body {
     font-size: 14px;
     font-family: Arial;
+    background-color: #f0f7ee;
   }
   
   h2 {
@@ -18,7 +19,7 @@ body {
   a, a:visited {
     font-weight: bold;
     text-decoration: none;
-    color: #800;
+    color: #E57200;
     text-decoration: underline;
   }
   
