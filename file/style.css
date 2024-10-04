@@ -1,4 +1,3 @@
-/* "Harding Text Web Regular Regular" */
 body {
     font-size: 14px;
     font-family: Arial;
@@ -13,8 +12,11 @@ body {
   }
   
   h3 {
+    font-family: "PT Sans";
+    color: #0F2CA7;
     margin-top: 24px;
     margin-bottom: 4px;
+    font-size: 20px;
   }
   
   a, a:visited {
