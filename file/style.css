@@ -1,28 +1,58 @@
+
+@font-face {
+  font-family: 'Linux Libertine'; /* normal */
+  src: url('/static/fonts/linux-libertine/LinLibertine_R.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Linux Libertine'; /* italic */
+  src: url('/static/fonts/linux-libertine/LinLibertine_RI.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Linux Libertine'; /* bold */
+  src: url('/static/fonts/linux-libertine/LinLibertine_RB.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Linux Libertine'; /* bold */
+  src: url('/static/fonts/linux-libertine/LinLibertine_RBI.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
 body {
-    font-size: 14px;
-    font-family: Arial;
+    font-size: 16px;
+    font-family: 'Linux Libertine';
     background-color: #f0f7ee;
   }
   
   h2 {
-    font-family: "Arial", serif;
+    font-family: "'Linux Libertine'", serif;
     letter-spacing: 1px;
     margin-top: 0px;
     font-size: 26px;
   }
   
   h3 {
-    font-family: "PT Sans";
+    font-family: "Linux Libertine";
     color: #0F2CA7;
     margin-top: 24px;
     margin-bottom: 4px;
     font-size: 20px;
+    font-style: italic;
   }
   
   a, a:visited {
     font-weight: bold;
     text-decoration: none;
-    color: #A12D45;
+    color: #60669F;
     text-decoration: underline;
   }
   
