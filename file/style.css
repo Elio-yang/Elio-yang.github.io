@@ -28,25 +28,25 @@
 }
 
 body {
-    font-size: 16px;
+    /* font-size: 17px; */
     font-family: Georgia, serif;
     background-color: #f0f7ee;
   }
   
   h2 {
-    font-family: "'Linux Libertine'", serif;
+    font-family: Georgia, serif;
     letter-spacing: 1px;
     margin-top: 0px;
     font-size: 26px;
   }
   
   h3 {
-    font-family: "Linux Libertine";
+    font-family: Georgia;
     color: #0F2CA7;
     margin-top: 24px;
     margin-bottom: 4px;
     font-size: 20px;
-    font-style: italic;
+    /* font-style: italic; */
   }
   
   a, a:visited {
