@@ -5,6 +5,7 @@
 - [Intel Xeon Tuning Guides](https://www.intel.com/content/www/us/en/developer/articles/guide/xeon-performance-tuning-and-solution-guides.html)
 - [turbostat](https://manpages.debian.org/testing/linux-cpupower/turbostat.8.en.html)
 - [numactrl](https://github.com/numactl/numactl)
+- [Intel TSC](https://github.com/dterei/tsc/tree/master`)
 - [cxl-ae](https://github.com/ece-fast-lab/cxl_type3_tests)
 - [Blog: System Performance Analysis](https://zhuanlan.zhihu.com/p/661306091)
 - [Blog: How to Measure Performance](https://zhuanlan.zhihu.com/p/693762038)
