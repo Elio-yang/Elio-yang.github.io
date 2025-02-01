@@ -105,26 +105,50 @@ Topics: Compiler&ensp;&&ensp;Profile-Guided Optimization&ensp;&&ensp;Machine Lea
 </ol>
 
 <h3>Useful Tools</h3>
-<li>GPU simulation:</li>
-    <ol>
-	<li><a href="https://github.com/gpgpu-sim/gpgpu-sim_distribution">GPGPU-Sim</a></li>
-    <li><a href="https://github.com/CMU-SAFARI/Mosaic">Mosaic</a>: virtual memory support</li>
-	<li><a href="https://github.com/DebashisGanguly/gpgpu-sim_UVMSmart">UVMSmart</a>: unified virtual memory support</li>
-	<li><a href="https://github.com/adwaitjog/mafia">MAFIA</a>: multi-tenant support</li>
-	<li><a href="https://www.cs.sjtu.edu.cn/~leng-jw/release/release/gpuvolt.html">GPUVolt</a>: PDN and voltage noise</li>
-	<li><a href="https://gitlab.com/akita/mgpusim">MGPUSim</a>: multi-GPU support</li>
-	<li><a href="https://github.com/csl-iisc/MGVM-MICRO2022">MGVM</a>: MCM-GPU virtual memory support</li>
-	<li><a href="https://github.com/platformxlab/G10">G10</a>: GPU UVM with SSD swapping support</li>
-
-    </ol>
-<li>SSD simulation:</li>
+<details>
+	<summary>GPU</summary>
 	<ol>
+		<li><a href="https://github.com/gpgpu-sim/gpgpu-sim_distribution">GPGPU-Sim</a></li>
+		<li><a href="https://github.com/CMU-SAFARI/Mosaic">Mosaic</a>: virtual memory support</li>
+		<li><a href="https://github.com/DebashisGanguly/gpgpu-sim_UVMSmart">UVMSmart</a>: unified virtual memory support</li>
+		<li><a href="https://github.com/adwaitjog/mafia">MAFIA</a>: multi-tenant support</li>
+		<li><a href="https://www.cs.sjtu.edu.cn/~leng-jw/release/release/gpuvolt.html">GPUVolt</a>: PDN and voltage noise</li>
+		<li><a href="https://gitlab.com/akita/mgpusim">MGPUSim</a>: multi-GPU support</li>
+		<li><a href="https://github.com/csl-iisc/MGVM-MICRO2022">MGVM</a>: MCM-GPU virtual memory support</li>
+		<li><a href="https://github.com/platformxlab/G10">G10</a>: GPU UVM with SSD swapping support</li>
+		<li><a href="https://github.com/csl-iisc/SUV-MICRO24">SUV</a>: GPU UVM and static analysis</li>
+	</ol>
+</details>
+
+<details>
+<summary>Arch:</summary>
+	<ol>
+	<li><a href="https://github.com/SET-Scheduling-Project/GEMINI-HPCA2024">GEMINI (DNN Chiplet)</a></li>
+	<li><a href="https://github.com/VIA-Research/vTrainer">vTrain (LLM Arch)</a></li>
+	<li><a href="https://github.com/PrincetonUniversity/LLMCompass">LLMCompass (LLM HW Arch)</a></li>
+	<li><a href="https://github.com/pcie-bench/pcie-model">PCIe Model</a></li>
+	<li><a href="https://github.com/PSAL-POSTECH/ONNXimizer">ONNXim</a></li>
+	</ol>
+</details>
+
+<details>
+<summary>Memory/Storage simulation:</summary>
+	<ol>
+	<li><a href="https://github.com/zxhero/gem5-CXL.git">Gem5-CXL</a></li>
 	<li><a href="https://github.com/CMU-SAFARI/MQSim">MQSim</a></li>
 	<li><a href="https://github.com/spypaul/MQSim_CXL">MQSim-CXL</a></li>
+	<li><a href="https://github.com/ferry-hhh/CXL-DMSim">CXL-DMSim (Gem5)</a></li>
+	<li><a href="https://github.com/PSAL-POSTECH/M2NDP-public">CXL-NDP</a></li>
+	<li><a href="https://github.com/VIA-Research/uPIMulator">uPIMulator</a></li>
+	<li><a href="https://github.com/csl-iisc/SBRP-ASPLOS23">GPGPU-Sim+PM</a></li>
     </ol>
-<li>CUDA/GPU Low-level:</li>
+</details>
+
+<details>
+	<summary>CUDA/GPU Low-level:</summary>
     <ol>
 	<li><a href="https://github.com/NVlabs/NVBit">NVBit</a>: SASS</li>
+	<li><a href="https://github.com/hgl71964/cuasmrl/tree/reproduce">cuasmrl</a>: SASS+RL</li>
 	<li><a href="https://github.com/UniHD-CEG/cuda-flux">CUDAFlux</a>: LLVM and PTX</li>
 	<li><a href="https://github.com/NervanaSystems/maxas">MaxAs</a></li>
 	<li><a href="https://github.com/daadaada/turingas">TuringAs</a></li>
@@ -132,13 +156,14 @@ Topics: Compiler&ensp;&&ensp;Profile-Guided Optimization&ensp;&&ensp;Machine Lea
 	<li><a href="https://github.com/decodecudabinary/Decoding-CUDA-Binary">Decoding-CUDA-Binary</a></li>
 	<li><a href="https://github.com/0x5ec1ab/gpu-tlb">Reverse-Engineering GPU TLB</a></li>
 	</ol>
-<li>Crypto:</li>
+</details>
+
+<li>Crypto & Security:</li>
     <ol>
-    <li><a href="./blog/9-20-FHE">FHE, MPC and PIR Libraries</a></li>
+    <li><a href="./blog/9-20-FHE">FHE, MPC, PIR and Other Libraries</a></li>
     </ol>
 
-
-
+	
 <h3>Posts</h3>
 <li>MQ-Sim Tutorial: [<a href="https://www.youtube.com/watch?v=d40ekgmjM98&t=12s&ab_channel=OnurMutluLectures">video</a>][<a href="https://safari.ethz.ch/projects_and_seminars/spring2022/lib/exe/fetch.php?media=pns_modern_ssds_fs2022_4th_before_meeting.pdf">slides</a>]</li>
 <li>Introduction blogs about Intel SGX: [<a href="https://blog.quarkslab.com/overview-of-intel-sgx-part-1-sgx-internals.html">Part I</a>] [<a href="https://blog.quarkslab.com/overview-of-intel-sgx-part-2-sgx-externals.html">Part II</a>]</li>
