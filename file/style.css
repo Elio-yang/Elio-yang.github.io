@@ -28,7 +28,7 @@
 }
 
 body {
-    /* font-size: 17px; */
+    font-size: 15px;
     font-family: Georgia, serif;
     /* background-color: #f0f7ee; */
     background-color: #eefbfb;
@@ -98,5 +98,5 @@ body {
   
   ul li {
     margin: 0px;
-    padding: 0px;
+    padding: 15px;
   }
