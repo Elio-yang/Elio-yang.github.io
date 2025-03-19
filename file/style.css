@@ -157,7 +157,8 @@ span.highlight3 {
   a, a:visited {
     font-weight: bold;
     text-decoration: none;
-    color: #0055aa;
+    /* color: #0055aa; */
+    color: #4169E1;
     text-decoration: underline;
   }
   
