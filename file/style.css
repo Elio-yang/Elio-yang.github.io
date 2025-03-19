@@ -125,12 +125,18 @@ span.highlight3 {
     margin-bottom: 0px;
   }
 
-  clustrmaps-container {
-    margin-top: 20px;
+  .clustrmaps-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
   }
+  
+  .clustrmaps-container table {
+    display: block;
+    margin: auto;
+  }
+  
 
   h2 {
     font-family: Georgia, serif;
