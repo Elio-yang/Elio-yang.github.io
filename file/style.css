@@ -98,12 +98,15 @@ span.highlight1 {
 }
 
 span.highlight2 {
-  color: teal;
+  /* color: teal; */
+  color: #009E60;
   font-weight: bold;
 }
 
 span.highlight3 {
-  color: #FF6347;
+  /* color: #FF6347; */
+  /* color: #FF4500; */
+  color: #BB2222;
   font-weight: bold;
 }
 
