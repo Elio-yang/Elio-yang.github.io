@@ -107,7 +107,7 @@ span.highlight3 {
   font-weight: bold;
 }
 
-body {
+  body {
     font-size: 16px;
     font-family: 'Linux Libertine', serif;
     /* background-color: #f0f7ee; */
@@ -125,12 +125,12 @@ body {
     margin-bottom: 0px;
   }
 
-  .clustrmaps-container {
+  clustrmaps-container {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
   h2 {
     font-family: Georgia, serif;
