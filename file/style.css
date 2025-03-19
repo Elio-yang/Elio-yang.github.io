@@ -27,13 +27,111 @@
   font-style: italic;
 }
 
+
+@font-face {
+  font-family: 'TeXGyrePagella';
+  src: url(../fonts/texgyrepagella-regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TeXGyrePagella';
+  src: url(../fonts/texgyrepagella-bold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TeXGyrePagella';
+  src: url(../fonts/texgyrepagella-italic.woff) format('woff');
+  font-weight: normal;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'TeXGyrePagella';
+  src: url(../fonts/texgyrepagella-bolditalic.woff) format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+#avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  /* border-radius: 100%; */
+  box-shadow: 0 0 0 0.1em #ddd;
+}
+
+name {
+  font-family: Georgia, serif;
+  font-size: 40px;
+}
+
+div.canvas {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+div.container {
+  font-family: 'TeXGyrePagella', serif;
+  margin: 20px;
+  margin-bottom: 35px;
+}
+
+div.publication {
+  font-family: 'TeXGyrePagella', serif;
+  margin-bottom: 20px;
+}
+
+span.venue {
+  color: #0055aa;
+  font-weight: bold;
+}
+
+span.highlight1 {
+  color: #BB2222;
+  font-weight: bold;
+}
+
+span.highlight2 {
+  color: teal;
+  font-weight: bold;
+}
+
+span.highlight3 {
+  color: #FF6347;
+  font-weight: bold;
+}
+
 body {
-    font-size: 15px;
-    font-family: Georgia, serif;
+    font-size: 16px;
+    font-family: 'Linux Libertine', serif;
     /* background-color: #f0f7ee; */
-    background-color: #eefbfb;
+    /* background-color: #eefbfb; */
+    background-color: rgb(255, 255, 255);
   }
   
+  heading {
+    font-family: Georgia;
+    /* color: rgb(97, 79, 219); */
+    color: #111184;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .clustrmaps-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
   h2 {
     font-family: Georgia, serif;
     letter-spacing: 1px;
@@ -53,7 +151,7 @@ body {
   a, a:visited {
     font-weight: bold;
     text-decoration: none;
-    color: #333ea3;
+    color: #0055aa;
     text-decoration: underline;
   }
   
