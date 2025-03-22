@@ -209,3 +209,18 @@ span.highlight3 {
     margin: 0px;
     padding: 15px;
   }
+
+
+  .abstract-btn {
+    cursor: pointer;
+    font-weight: bold;
+    /* color: #0055aa; */
+    margin-top: 6px;
+    display: inline-block;
+  }
+  
+  .abstract-text {
+    background-color: beige;
+    margin-top: 9px;
+    /* font-style: italic; */
+  }

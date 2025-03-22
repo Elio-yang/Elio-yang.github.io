@@ -9,6 +9,20 @@
 	<meta name="google-site-verification" content="g82ldq6AgywQ5Vr7GMGCArRycPKlSDkmKLfqEje4vqI" />
 </head>
 
+<script>
+	function toggle_abstract(btn) {
+	  const absDiv = btn.nextElementSibling;
+	  if (absDiv.style.display === "none") {
+		absDiv.style.display = "block";
+		btn.textContent = "[ Hide Brief ]";
+	  } else {
+		absDiv.style.display = "none";
+		btn.textContent = "[ Show Brief ]";
+	  }
+	}
+</script>
+	
+
 <body>
     <div class="canvas">
         <div class="container">
@@ -105,13 +119,33 @@
                     <b>NetCrafter: Tailoring Network Traffic for Non-Uniform Bandwidth Multi-GPU Systems</b><br>
                     Amel Fatima, <b>Yang Yang</b>, Yifan Sun, Rachata Ausavarungnirun, Adwait Jog<br>
                     In the Proceedings of The International Symposium on Computer Architecture, Tokyo, Japen, June 2025
+					<a href="coming.html">[PDF]</a>&ensp;<a href="coming.html">[Slides]</a>&ensp;<a href="coming.html">[Code]</a>&ensp;<a class="abstract-btn" onclick="toggle_abstract(this)">[Show Brief]</a>
+						<div class="abstract-text" style="display: none;">
+							<p>
+								We present <b>NetCrafter</b>, a set of novel techniques to manage network traffic, especially across low-bandwidth links in multi-GPU systems.
+  								NetCrafter reduces the volume of flit traffic by (i) stitching compatible, partially filled flits, (ii) trimming unnecessary flits to avoid redundant transfers, and (iii) sequencing flits so that latency-sensitive ones arrive at their destinations faster.
+							</p>
+						</div>
                 </li>
 				<br>
                 <li>
                     <span class="highlight2">(ISPASS'25, To Appear)</span><br>
                     <b>Dissecting Performance Overheads of Confidential Computing on GPU-based Systems</b><br>
                     <b>Yang Yang</b>, Mohammad Sonji, Adwait Jog<br>
-                    In the Proceedings of IEEE International Symposium on Performance Analysis of Systems and Software, Ghent, Belgium, May 2025
+                    In the Proceedings of IEEE International Symposium on Performance Analysis of Systems and Software, Ghent, Belgium, May 2025 <br>
+					<a href="coming.html">[PDF]</a>&ensp;<a href="coming.html">[Slides]</a>&ensp;<a href="coming.html">[Code]</a>&ensp;<a class="abstract-btn" onclick="toggle_abstract(this)">[Show Brief]</a>
+						<div class="abstract-text" style="display: none;">
+							<p>
+								Confidential computing (CC) on GPU-based systems is a critical technology for protecting data in use. By leveraging encryption and virtual machine (VM) level isolation, CC allows existing code to run without modification. However, its performance characteristics and trade-offs in GPU-based systems remain unexplored. 
+								<br>
+								<br>
+								This work provides a comprehensive evaluation of CC, offering empirical characterizations to diverse workloads and perspectives. We propose a simple performance model that could guide the characterization. 
+								Next, we evaluate GPGPU benchmarks with a focus on data transfer, memory management, cryptographic operations, kernel launch, and kernel execution with a special focus on UVM performance. We further characterize workloads such as CNN training and LLM inference to see how CC overhead would appear in real-world applications. 
+								<br>
+								<br>
+								Additionally, we explored optimization techniques based on our observations, including kernel fusion, overlapping, and quantization, showing their effects and trade-offs on CC performance.
+							</p>
+						</div>
                 </li>
 				<br>
 				<li>
