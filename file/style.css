@@ -215,12 +215,12 @@ span.highlight3 {
     cursor: pointer;
     font-weight: bold;
     /* color: #0055aa; */
-    margin-top: 6px;
+    /* margin-top: 6px; */
     display: inline-block;
   }
   
   .abstract-text {
     background-color: beige;
-    margin-top: 9px;
+    /* margin-top: 9px; */
     /* font-style: italic; */
   }
