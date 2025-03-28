@@ -57,6 +57,13 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'consolaslxgw';
+  src: url(../font/consolaslxgw.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #avatar {
   display: block;
   margin-left: auto;
@@ -67,7 +74,7 @@
 }
 
 name {
-  font-family: Georgia, serif;
+  font-family: Georgia, 'consolaslxgw';
   font-size: 40px;
 }
 
