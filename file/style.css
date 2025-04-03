@@ -81,6 +81,7 @@ name {
 div.canvas {
   max-width: 900px;
   margin: 0 auto;
+  background-color:beige;
 }
 
 div.container {
