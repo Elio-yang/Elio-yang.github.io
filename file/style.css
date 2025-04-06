@@ -16,21 +16,21 @@
 
 @font-face {
   font-family: 'TeXGyrePagella';
-  src: url(../fonts/texgyrepagella-regular.woff) format('woff');
+  src: url('../font/texgyrepagella-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TeXGyrePagella';
-  src: url(../fonts/texgyrepagella-bold.woff) format('woff');
+  src: url('../font/texgyrepagella-bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TeXGyrePagella';
-  src: url(../fonts/texgyrepagella-italic.woff) format('woff');
+  src: url('../font/texgyrepagella-italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 
@@ -38,14 +38,14 @@
 
 @font-face {
   font-family: 'TeXGyrePagella';
-  src: url(../fonts/texgyrepagella-bolditalic.woff) format('woff');
+  src: url('../font/texgyrepagella-bolditalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'consolaslxgw';
-  src: url(../font/consolaslxgw.woff) format('woff');
+  src: url('../font/consolaslxgw.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
