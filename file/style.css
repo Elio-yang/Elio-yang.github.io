@@ -54,7 +54,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 120px;
+  width: 110px;
   /* border-radius: 100%; */
   box-shadow: 0 0 0 0.1em #ddd;
 }
@@ -65,9 +65,9 @@ name {
 }
 
 div.canvas {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
-  background-color:aliceblue;
+  background-color:whitesmoke;
 }
 
 div.container {
@@ -105,7 +105,7 @@ span.highlight3 {
 }
 
   body {
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'Linux Libertine', serif;
     /* background-color: #f0f7ee; */
     /* background-color: #eefbfb; */
