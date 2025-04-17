@@ -119,14 +119,13 @@
                     Amel Fatima, <b>Yang Yang</b>, Yifan Sun, Rachata Ausavarungnirun, Adwait Jog<br>
 					In the Proceedings of ACM International Symposium on Computer Architecture, Tokyo, Japan, June 2025 <br>
                     <!-- In the Proceedings of The International Symposium on Computer Architecture, Tokyo, Japen, June 2025 <br> -->
-					<a class="abstract-btn" onclick="toggle_abstract(this)">[Show Brief]</a>&ensp;
-						<div class="abstract-text" style="display: none;">
-							<p>
-								We present <b>NetCrafter</b>, a set of novel techniques to manage network traffic, especially across low-bandwidth links in multi-GPU systems.
-  								NetCrafter reduces the volume of flit traffic by (i) stitching compatible, partially filled flits, (ii) trimming unnecessary flits to avoid redundant transfers, and (iii) sequencing flits so that latency-sensitive ones arrive at their destinations faster.
-							</p>
-						</div>
-					<a href="./coming">[PDF]</a>&ensp;<a href="./coming">[Slides]</a>&ensp;<a href="./coming">[Code]</a>
+					<a href="./coming">[PDF]</a>&ensp;<a href="./coming">[Slides]</a>&ensp;<a href="./coming">[Code]</a>>&ensp;<a class="abstract-btn" onclick="toggle_abstract(this)">[Show Brief]</a>&ensp;
+					<div class="abstract-text" style="display: none;">
+						<p>
+							We present <b>NetCrafter</b>, a set of novel techniques to manage network traffic, especially across low-bandwidth links in multi-GPU systems.
+							  NetCrafter reduces the volume of flit traffic by (i) stitching compatible, partially filled flits, (ii) trimming unnecessary flits to avoid redundant transfers, and (iii) sequencing flits so that latency-sensitive ones arrive at their destinations faster.
+						</p>
+					</div>
                 </li>
 				<br>
                 <li>
@@ -134,12 +133,11 @@
                     <b>Dissecting Performance Overheads of Confidential Computing on GPU-based Systems</b><br>
                     <b>Yang Yang</b>, Mohammad Sonji, Adwait Jog<br>
                     In the Proceedings of IEEE International Symposium on Performance Analysis of Systems and Software, Ghent, Belgium, May 2025 <br>
-					<a class="abstract-btn" onclick="toggle_abstract(this)">[Show Brief]</a>&ensp;
-						<div class="abstract-text" style="display: none;">
-							<p>
-								Confidential computing (CC) is a critical technology for protecting data in use. By leveraging encryption and virtual machine (VM) level isolation, CC allows existing code to run without modification while offering confidentiality and integrity guarantees. However, the performance impact of CC in GPU-based systems can be significant. In this work, we present a comprehensive performance evaluation of CC guided by a simple performance model. Specifically, we start by evaluating CUDA applications with a focus on data transfer, memory management, encryption, kernel launch, and kernel execution. We also present a detailed event-level analysis of these applications, revealing that the execution times of kernels that do not use unified virtual memory (UVM) are mostly unaffected, while associated kernel launch overhead and queuing time increase significantly. On the other hand, the execution time of kernels using UVM increases drastically under CC, in addition to other launch and queuing overheads. We also study CNN training and LLM inference to see how CC overhead would affect them. Finally, we consider several optimization techniques, including kernel fusion, overlapping, and quantization, towards addressing the overheads of CC.							</p>
-						</div>
-					<a href="./coming">[PDF]</a>&ensp;<a href="./coming">[Slides]</a>&ensp;<a href="https://github.com/insight-cal-uva/hcc-ispass25-artifact" style="color: green;">[Artifact Available]</a>
+					<a href="./coming">[PDF]</a>&ensp;<a href="./coming">[Slides]</a>&ensp;<a href="https://github.com/insight-cal-uva/hcc-ispass25-artifact" style="color: green;">[Artifact Available]</a>&ensp;<a class="abstract-btn" onclick="toggle_abstract(this)">[Show Brief]</a>&ensp;
+					<div class="abstract-text" style="display: none;">
+						<p>
+							Confidential computing (CC) is a critical technology for protecting data in use. By leveraging encryption and virtual machine (VM) level isolation, CC allows existing code to run without modification while offering confidentiality and integrity guarantees. However, the performance impact of CC in GPU-based systems can be significant. In this work, we present a comprehensive performance evaluation of CC guided by a simple performance model. Specifically, we start by evaluating CUDA applications with a focus on data transfer, memory management, encryption, kernel launch, and kernel execution. We also present a detailed event-level analysis of these applications, revealing that the execution times of kernels that do not use unified virtual memory (UVM) are mostly unaffected, while associated kernel launch overhead and queuing time increase significantly. On the other hand, the execution time of kernels using UVM increases drastically under CC, in addition to other launch and queuing overheads. We also study CNN training and LLM inference to see how CC overhead would affect them. Finally, we consider several optimization techniques, including kernel fusion, overlapping, and quantization, towards addressing the overheads of CC.							</p>
+					</div>
                 </li>
             </ol>
         </div>
