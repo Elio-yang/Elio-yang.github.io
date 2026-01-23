@@ -21,9 +21,21 @@
 	  }
 	}
 </script>
-	
+
+
 
 <body>
+	<div class="navbar">
+		<a href="#">Home</a>
+		<a href="#interests">Interests</a>
+		<a href="#news">News</a>
+		<a href="#education">Education</a>
+		<a href="#exp">Experience</a>
+		<a href="#pub">Publication</a>
+		<a href="#tools">Tools</a>
+		<a href="#memo">Memo</a>
+	</div>
+
     <div class="canvas">
         <div class="container">
             <img id="avatar" src="./file/photo.jpg">
@@ -45,16 +57,22 @@
                 Prior to that, I received my B.S. degree from Jilin University and was a member of ETECA Lab under Prof. <a href="https://jingweijiatan.github.io/">Jingweijia Tan</a>. I was also a visiting student at the State Key Laboratory of Processors at ICT, CAS, under Prof. <a href="https://liguangli.me/">Guangli Li</a>.
             </p>
 			
-			<p style="border: 2px solid orangered; padding: 14px; border-radius: 6px; background-color: #fff7f2; text-align: justify;">
+			<!-- <p style="border: 2px solid orangered; padding: 14px; border-radius: 6px; background-color: #fff7f2; text-align: justify;">
 				I am seeking <strong>Research Internship (Summer 2026)</strong> in GPU architecture, memory technologies and confidential computing (TEEs). Feel free to drop me an email :)
-			</p>
+			</p> -->
 
         </div>
 
         <div class="container">
-            <heading>Research Interests</heading>
+            <heading id="interests">Interests</heading>
             <p>
-				I am interested in performance issues in <span class="highlight3">GPU x Trusted Computing x Cryptography x Memory</span>.
+				<!-- I am interested in performance issues in <span class="highlight3">GPU x Trusted Computing x Cryptography x Memory</span>. -->
+				I am interested in performance issues in 
+				<span style="color: #D32F2F; font-weight: bold;">GPU</span> &times;
+				<span style="color: #2E7D32; font-weight: bold;">Trusted Computing</span> &times;
+				<span style="color: #1565C0; font-weight: bold;">Cryptography</span> &times;
+				<span style="color: #E65100; font-weight: bold;">Memory</span>
+				
                 <!-- I am interested in <span class="highlight3">GPU x {Trusted-Computing, Cryptography, CXL}</span>.  -->
 				<!-- <br> -->
 				<!-- I do simulations to implement most ideas and enjoy hacking the machine. -->
@@ -68,16 +86,36 @@
         </div>
 
 		<div class="container">
-            <heading>News</heading>
-            <p>
-                [<b>March 2025</b>] NetCrafter got accepted by <a href="https://iscaconf.org/isca2025/"> ISCA'25</a>, see you in Tokyo!
-				<br>
-				[<b>March 2025</b>] One paper got accepted by <a href="https://ispass.org/ispass2025/">ISPASS'25</a>, see you in Ghent!
-            </p>
-        </div>
+			<heading id="news">News</heading>
+
+			<div class="news-item">
+				<div class="date">[January 2026]</div>
+				<div class="content">
+				I will join <a href="https://www.nvidia.com/en-us/" style="color: #76B900; text-decoration: none; font-weight: bold;">NVIDIA</a> this summer as a Hardware Security Intern!
+				Special thanks to <a href="https://zzrcxb.me/">Neil</a>, <a href="https://www.linkedin.com/in/siddhartha-chhabra-a513a94/">Sid</a>, <a href="https://www.linkedin.com/in/ambarishvyas/">Ambarish</a> and <a href="https://research.nvidia.com/person/edward-suh">Edward</a> for the insightful conversations and for making this possible.
+				See you in Santa Clara!
+				</div>
+			</div>
+
+			<div class="news-item">
+				<div class="date">[March 2025]</div>
+				<div class="content">
+					NetCrafter got accepted by <a href="https://iscaconf.org/isca2025/">ISCA'25</a>, see you in Tokyo!
+				</div>
+			</div>
+
+			<div class="news-item">
+				<div class="date">[March 2025]</div>
+				<div class="content">
+					One paper got accepted by <a href="https://ispass.org/ispass2025/">ISPASS'25</a>, see you in Ghent!
+				</div>
+			</div>
+		</div>
+
+
 
         <div class="container">
-            <heading>Education</heading>
+            <heading id="education">Education</heading>
             <p>
 				2023 - Present
 				<br>
@@ -93,7 +131,7 @@
         </div>
 
         <div class="container">
-            <heading>Experience</heading>
+            <heading id="exp">Experience</heading>
 			<p>
 				<a href="https://insight-cal.github.io/">Insight Lab</a>, University of Virginia, USA
 				<br>
@@ -124,7 +162,7 @@
         </div>
 
         <div class="container">
-            <heading>Publications</heading>
+            <heading id="pub">Publications</heading>
             <ol>
 				<li>
                     <span class="highlight2">(Under Review)</span><br>
@@ -172,7 +210,7 @@
         </div>
 
         <div class="container">
-            <heading>Teaching</heading>
+            <heading id="teach">Teaching</heading>
             <ol>
                 <li>[<b>24 Fall</b>] TA for <a href="https://adwaitjog.github.io/teach/uva_6354_f24.html"><b>CS 6354: Computer Architecture</b></a></li>
 				<li>[<b>25 Fall</b>] TA for <a href="https://adwaitjog.github.io/teach/uva_4444_f25.html"><b>CS 4444: Introduction to Parallel Computing</b></a></li>
@@ -180,14 +218,14 @@
         </div>
 		
 		<div class="container">
-			<heading>Award</heading>
+			<heading id="awd">Award</heading>
             <ol>
                 <li>[<b>Travel Grant</b>] ISPASS'25&ensp;ISCA'25</li>
             </ol>
 		</div>
 
 		<div class="container">
-			<heading>Service</heading>
+			<heading id="serv">Service</heading>
             <ol>
                 <li>[<b>SIG</b>] Co-organizer of Systems-Interest-Group meetings at UVA.</li>
                 <li>[<b>Artifact Evaluation Committee</b>] IISWC'25</li>
@@ -195,7 +233,7 @@
 		</div>
 
 		<div class="container">
-            <heading>Useful Tools</heading>
+            <heading id="tools">Useful Tools</heading>
 			<p>
 			<details>
                 <summary>GPU</summary>
@@ -262,7 +300,7 @@
         </div>
 
 		<div class="container">
-			<heading>Memos</heading>
+			<heading id="memo">Memos</heading>
 			<ol>
 				<li>MQ-Sim Tutorial: [<a href="https://www.youtube.com/watch?v=d40ekgmjM98&t=12s&ab_channel=OnurMutluLectures">video</a>][<a href="https://safari.ethz.ch/projects_and_seminars/spring2022/lib/exe/fetch.php?media=pns_modern_ssds_fs2022_4th_before_meeting.pdf">slides</a>]</li>
 				<li>Introduction blogs about Intel SGX: [<a href="https://blog.quarkslab.com/overview-of-intel-sgx-part-1-sgx-internals.html">Part I</a>] [<a href="https://blog.quarkslab.com/overview-of-intel-sgx-part-2-sgx-externals.html">Part II</a>]</li>
@@ -285,7 +323,7 @@
 		</div>
 
 		<div class="container">
-			<heading>Others</heading>
+			<heading id="oths">Others</heading>
 			<p>
 				<ol>
 				<li><a href="https://taoxiease.github.io/advice/">Advice collection by Prof. Tao Xie</a></li>
@@ -294,10 +332,18 @@
 			</p>
 
 		<div class="container">
-			<p align="center">
-				Last updated: 2025-11-18
+			<p style="text-align:center;">
+				Last updated: <span id="lastUpdated"></span>
 			</p>
 		</div>
+		<script>
+			const el = document.getElementById("lastUpdated");
+			if (el) {
+				const lastMod = new Date(document.lastModified);
+				const options = { year: 'numeric', month: 'long', day: 'numeric' };
+				el.textContent = lastMod.toLocaleDateString(undefined, options);
+			}
+		</script>
 		
 		<hr>
 		<div class="clustrmaps-container">

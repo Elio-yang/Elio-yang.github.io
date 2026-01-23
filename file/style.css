@@ -55,7 +55,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 110px;
-  /* border-radius: 100%; */
+  /* border-radius: 90%; */
   box-shadow: 0 0 0 0.1em #ddd;
 }
 
@@ -67,7 +67,11 @@ name {
 div.canvas {
   max-width: 900px;
   margin: 0 auto;
-  background-color:whitesmoke;
+  /* background-color:#f0f7ee; */
+  background-color:#F3F6FB;
+  /* background-color:#EEF3FA; */
+  /* background-color:#EAF2F8; */
+
 }
 
 div.container {
@@ -117,10 +121,14 @@ span.highlight3 {
     font-family: Georgia;
     /* color: rgb(97, 79, 219); */
     color: #111184;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     margin-top: 0px;
     margin-bottom: 0px;
+    
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
   }
 
   .clustrmaps-container {
@@ -157,7 +165,6 @@ span.highlight3 {
     text-decoration: none;
     /* color: #0055aa; */
     color: #4169E1;
-    text-decoration: underline;
   }
   
   a:hover {
@@ -218,3 +225,43 @@ span.highlight3 {
     /* margin-top: 9px; */
     /* font-style: italic; */
   }
+
+.news-item {
+  display: grid;
+  grid-template-columns: 140px 1fr; 
+  column-gap: 18px;
+  align-items: start;
+  margin: 10px 0;
+}
+.news-item .date {
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: right; 
+  color:#464646;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.navbar a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #111184;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    color: #1565C0;
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
