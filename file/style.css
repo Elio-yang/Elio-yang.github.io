@@ -228,7 +228,7 @@ span.highlight3 {
 
 .news-item {
   display: grid;
-  grid-template-columns: 140px 1fr; 
+  grid-template-columns: 160px 1fr; 
   column-gap: 18px;
   align-items: start;
   margin: 10px 0;
