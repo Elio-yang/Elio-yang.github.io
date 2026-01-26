@@ -215,9 +215,8 @@ span.highlight3 {
   .abstract-btn {
     cursor: pointer;
     font-weight: bold;
-    /* color: #0055aa; */
-    /* margin-top: 6px; */
     display: inline-block;
+    font-size: 20px;
   }
   
   .abstract-text {
@@ -232,6 +231,7 @@ span.highlight3 {
   column-gap: 18px;
   align-items: start;
   margin: 10px 0;
+  font-size: 20px;
 }
 .news-item .date {
   font-weight: bold;
