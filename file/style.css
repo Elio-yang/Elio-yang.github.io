@@ -59,19 +59,20 @@
   box-shadow: 0 0 0 0.1em #ddd;
 }
 
-name {
-  font-family: Georgia, 'consolaslxgw';
-  font-size: 40px;
-}
-
 div.canvas {
   max-width: 900px;
   margin: 0 auto;
-  /* background-color:#f0f7ee; */
   background-color:#F3F6FB;
+  /* background-color:#f0f7ee; */
   /* background-color:#EEF3FA; */
   /* background-color:#EAF2F8; */
+}
 
+
+
+name {
+  font-family: Georgia, 'consolaslxgw';
+  font-size: 40px;
 }
 
 div.container {
