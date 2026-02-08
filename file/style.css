@@ -50,6 +50,28 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Georgia';
+  src: url('../font/Georgia.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('../font/Georgia-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('../font/Georgia-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 #avatar {
   display: block;
   margin-left: auto;
