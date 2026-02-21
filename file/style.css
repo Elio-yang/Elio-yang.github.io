@@ -187,13 +187,17 @@ span.highlight3 {
     font-weight: bold;
     text-decoration: none;
     /* color: #0055aa; */
+    /* color: gray; */
     color: #4169E1;
+    /* color: gray; */
   }
   
   a:hover {
     font-weight: bold;
-    text-decoration: none;
-    color: #000000;
+    text-decoration: underline;
+    /* color: #000000; */
+    /* color: #4169E1; */
+    color: #111184;
   }
   
   a:active {
@@ -275,13 +279,15 @@ span.highlight3 {
 
 .navbar a {
     margin: 0 8px;
+    font-family: Georgia;
     text-decoration: none;
     color: #111184;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .navbar a:hover {
-    color: #1565C0;
+    /* color: #1565C0; */
+    color: #111184;
     text-decoration: underline;
 }
 
