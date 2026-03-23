@@ -51,12 +51,14 @@
 				<a href="https://github.com/Elio-yang">GitHub</a>&nbsp;/&nbsp;
 				<a href="https://scholar.google.com/citations?user=0IV2gRMAAAAJ&hl=en">Google Scholar</a>
             </p>
-            <p>
-                Hi, I'm a PhD student in the <a href="https://engineering.virginia.edu/department/computer-science">Department of Computer Science</a> at <a href="https://www.virginia.edu/">University of Virginia</a>, advised by Prof. <a href="http://adwaitjog.github.io/">Adwait Jog</a>.
-            </p>
-            <p>
-                Prior to that, I received my B.S. degree from Jilin University and was a member of ETECA Lab under Prof. <a href="https://jingweijiatan.github.io/">Jingweijia Tan</a>. I was also a visiting student at the State Key Laboratory of Processors at ICT, CAS, under Prof. <a href="https://liguangli.me/">Guangli Li</a>.
-            </p>
+            <div class="intro-panel">
+                <p class="intro-lead">
+                    Hi, I'm a PhD student in the <a href="https://engineering.virginia.edu/department/computer-science">Department of Computer Science</a> at <a href="https://www.virginia.edu/">University of Virginia</a>, advised by Prof. <a href="http://adwaitjog.github.io/">Adwait Jog</a>.
+                </p>
+                <p class="intro-lead">
+                    Prior to that, I received my B.S. degree from Jilin University and was a member of ETECA Lab under Prof. <a href="https://jingweijiatan.github.io/">Jingweijia Tan</a>. I was also a visiting student at the State Key Laboratory of Processors at ICT, CAS, under Prof. <a href="https://liguangli.me/">Guangli Li</a>.
+                </p>
+            </div>
 			
 			<!-- <p style="border: 2px solid orangered; padding: 14px; border-radius: 6px; background-color: #fff7f2; text-align: justify;">
 				I am seeking <strong>Research Internship (Summer 2026)</strong> in GPU architecture, memory technologies and confidential computing (TEEs). Feel free to drop me an email :)
@@ -66,23 +68,33 @@
 
         <div class="container">
             <heading id="interests">Interests</heading>
-            <p>
-				<!-- I am interested in performance issues in <span class="highlight3">GPU x Trusted Computing x Cryptography x Memory</span>. -->
-				I am interested in performance issues in 
-				<span style="color: #D32F2F; font-weight: bold;">GPU</span> &times;
-				<span style="color: #2E7D32; font-weight: bold;">Trusted Computing</span> &times;
-				<span style="color: #1565C0; font-weight: bold;">Cryptography</span> &times;
-				<span style="color: #E65100; font-weight: bold;">Memory</span>
-                <!-- I am interested in <span class="highlight3">GPU x {Trusted-Computing, Cryptography, CXL}</span>.  -->
-				<!-- <br> -->
-				<!-- I do simulations to implement most ideas and enjoy hacking the machine. -->
-				<br>
-				<br>
-				Recently, I have focused on understanding and addressing performance issues (e.g., data movement <span class="highlight3">[ISCA'25]</span>) in secure GPU architectures like confidential computing <span class="highlight3">[ISPASS'25, +]</span>.
-				<br>
-				<br>
-				I am also interested in making cryptographic protocols (e.g., PIR and FHE) more practical using GPUs.
-            </p>
+            <div class="interests-panel">
+				<p class="interests-lead">
+					I work on performance questions at the intersection of
+				</p>
+
+				<div class="interest-pillars">
+					<span class="interest-pill interest-pill--gpu">GPU</span>
+					<span class="interest-pill interest-pill--trusted">Trusted Computing</span>
+					<span class="interest-pill interest-pill--crypto">Cryptography</span>
+					<span class="interest-pill interest-pill--memory">Memory</span>
+				</div>
+
+				<div class="interest-notes">
+					<div class="interest-note">
+						<p class="interest-note-label">Current</p>
+						<p class="interest-note-text">
+							Understanding and addressing performance issues in secure GPU architectures, especially confidential computing, including data movement <span class="highlight3">[ISCA'25]</span> and system-level CC overheads <span class="highlight3">[ISPASS'25, +]</span>.
+						</p>
+					</div>
+					<div class="interest-note">
+						<p class="interest-note-label">Future</p>
+						<p class="interest-note-text">
+							I am interested in <em>(i) scaling GPU-based CC</em>, <em>(ii) making cryptographic protocols more GPU-friendly</em>, and <em>(iii) addressing the memory wall in GPU-based CC</em>.
+						</p>
+					</div>
+				</div>
+            </div>
         </div>
 
 		<div class="container">
@@ -145,59 +157,92 @@
 
         <div class="container">
             <heading id="education">Education</heading>
-            <p>
-				2023 - Now
-				<br>
-				<b>Ph.D.</b> in Computer Science, University of Virginia 
-				<br>
-				<br>
-				2019 - 2023
-				<br>
-				<b>B.S.</b> in Computer Science, Jilin University 
-				<br>
-			</p>
+            <div class="education-list">
+				<div class="education-item">
+					<img class="education-logo" src="./file/uva.ico" alt="University of Virginia logo">
+					<article class="education-card">
+						<div class="education-header">
+							<div>
+								<h3 class="education-degree">Ph.D. in Computer Science</h3>
+								<p class="education-school">University of Virginia</p>
+							</div>
+							<span class="education-period">2023 - Now</span>
+						</div>
+					</article>
+				</div>
+
+				<div class="education-item">
+					<img class="education-logo" src="./file/jlu_logo.png" alt="Jilin University logo">
+					<article class="education-card">
+						<div class="education-header">
+							<div>
+								<h3 class="education-degree">B.S. in Computer Science</h3>
+								<p class="education-school">Jilin University</p>
+							</div>
+							<span class="education-period">2019 - 2023</span>
+						</div>
+					</article>
+				</div>
+			</div>
             
         </div>
 
         <div class="container">
             <heading id="exp">Experience</heading>
-			<p>
-				<a href="https://insight-cal.github.io/">Insight Lab</a>, University of Virginia, USA
-				<br>
-				Aug. 2023 - Now<br>
-				Advisor: <a href="http://adwaitjog.github.io/">Adwait Jog </a>
-				<br>
-				Topics: GPU&ensp;&&ensp;Trusted-Computing (TEE, Cryptography, etc.)&ensp;&&ensp;Memory<br>
-				<br>	
-				
-				State Key Laboratory of Processors, ICT, CAS, P.R.China
-				<br>
-				Jul. 2022 - Sept. 2023
-				<br>
-				Advisor: <a href="https://liguangli.me/">Guangli Li</a>
-				<br>
-				Topics: Compiler&ensp;&&ensp;Profile-Guided Optimization&ensp;&&ensp;LLVM
-				<br>
-				<br>
-				ETECA Lab, Jilin University, P.R.China
-				<br>				
-				Feb. 2022 - Jul. 2023
-				<br>
-				Advisor: <a href="https://jingweijiatan.github.io/">Jingweijia Tan </a>
-				<br>
-				Topics: GPU Power Modeling&ensp;&&ensp;MCM-GPU&ensp;&&ensp;Under-Voltage Reliability</br>
-				Thesis: The Design and Implementation of Binary Code Analysis Framework for NVIDIA GPU</br>
-			</p>
+			<div class="experience-list">
+				<article class="experience-card">
+					<div class="experience-header">
+						<div>
+							<h3 class="experience-title"><a href="https://insight-cal.github.io/">Insight Lab</a></h3>
+							<p class="experience-affiliation">University of Virginia, USA</p>
+						</div>
+						<span class="experience-period">Aug. 2023 - Now</span>
+					</div>
+					<div class="experience-details">
+						<p><span class="experience-label">Advisor</span> <a href="http://adwaitjog.github.io/">Adwait Jog</a></p>
+						<p><span class="experience-label">Topics</span> GPU, Trusted Computing (TEE, Cryptography, etc.), Memory</p>
+					</div>
+				</article>
+
+				<article class="experience-card">
+					<div class="experience-header">
+						<div>
+							<h3 class="experience-title">State Key Laboratory of Processors</h3>
+							<p class="experience-affiliation">ICT, CAS, China</p>
+						</div>
+						<span class="experience-period">Jul. 2022 - Sept. 2023</span>
+					</div>
+					<div class="experience-details">
+						<p><span class="experience-label">Advisor</span> <a href="https://liguangli.me/">Guangli Li</a></p>
+						<p><span class="experience-label">Topics</span> Compiler, Profile-Guided Optimization, LLVM</p>
+					</div>
+				</article>
+
+				<article class="experience-card">
+					<div class="experience-header">
+						<div>
+							<h3 class="experience-title">ETECA Lab</h3>
+							<p class="experience-affiliation">Jilin University, China</p>
+						</div>
+						<span class="experience-period">Feb. 2022 - Jul. 2023</span>
+					</div>
+					<div class="experience-details">
+						<p><span class="experience-label">Advisor</span> <a href="https://jingweijiatan.github.io/">Jingweijia Tan</a></p>
+						<p><span class="experience-label">Topics</span> GPU Power Modeling, MCM-GPU, Under-Voltage Reliability</p>
+						<p><span class="experience-label">Thesis</span> The Design and Implementation of Binary Code Analysis Framework for NVIDIA GPU</p>
+					</div>
+				</article>
+			</div>
         </div>
 
         <div class="container">
             <heading id="pub">Publications</heading>
             <div class="publication-list">
 				<article class="publication-card publication-card--review">
-					<div class="publication-header">
+					<div class="publication-title-row">
 						<span class="publication-badge">Under Review</span>
+						<h3 class="publication-title">Performance-efficient GPU-based Confidential Computing: Are we there yet?</h3>
 					</div>
-					<h3 class="publication-title">Performance-efficient GPU-based Confidential Computing: Are we there yet?</h3>
 					<p class="publication-authors"><b>Yang Yang</b>, Adwait Jog</p>
 					<!-- <p class="publication-meta">Ongoing work on performance-efficient confidential computing for GPU-based systems.</p> -->
 					<div class="publication-actions">
@@ -211,11 +256,10 @@
 				</article>
 
 				<article class="publication-card">
-					<div class="publication-header">
+					<div class="publication-title-row">
 						<span class="publication-badge">ISCA'25</span>
-						<span class="publication-year">2025</span>
+						<h3 class="publication-title">NetCrafter: Tailoring Network Traffic for Non-Uniform Bandwidth Multi-GPU Systems</h3>
 					</div>
-					<h3 class="publication-title">NetCrafter: Tailoring Network Traffic for Non-Uniform Bandwidth Multi-GPU Systems</h3>
 					<p class="publication-authors">Amel Fatima, <b>Yang Yang</b>, Yifan Sun, Rachata Ausavarungnirun, Adwait Jog</p>
 					<p class="publication-meta">In the Proceedings of ACM International Symposium on Computer Architecture, Tokyo, Japan, June 2025</p>
 					<div class="publication-actions">
@@ -234,11 +278,10 @@
 				</article>
 
 				<article class="publication-card">
-					<div class="publication-header">
+					<div class="publication-title-row">
 						<span class="publication-badge">ISPASS'25</span>
-						<span class="publication-year">2025</span>
+						<h3 class="publication-title">Dissecting Performance Overheads of Confidential Computing on GPU-based Systems</h3>
 					</div>
-					<h3 class="publication-title">Dissecting Performance Overheads of Confidential Computing on GPU-based Systems</h3>
 					<p class="publication-authors"><b>Yang Yang</b>, Mohammad Sonji, Adwait Jog</p>
 					<p class="publication-meta">In the Proceedings of IEEE International Symposium on Performance Analysis of Systems and Software, Ghent, Belgium, May 2025</p>
 					<div class="publication-actions">
@@ -259,35 +302,47 @@
 
         <div class="container">
             <heading id="teach">Teaching</heading>
-            <ol>
-                <li>[<b>24 Fall</b>] TA for <a href="https://adwaitjog.github.io/teach/uva_6354_f24.html"><b>CS 6354: Computer Architecture</b></a></li>
-				<li>[<b>25 Fall</b>] TA for <a href="https://adwaitjog.github.io/teach/uva_4444_f25.html"><b>CS 4444: Introduction to Parallel Computing</b></a></li>
-            </ol>
+            <div class="info-card">
+				<div class="info-list">
+					<div class="info-item">
+						<span class="info-tag">24 Fall</span>
+						<p class="info-body">TA for <a href="https://adwaitjog.github.io/teach/uva_6354_f24.html"><b>CS 6354: Computer Architecture</b></a></p>
+					</div>
+					<div class="info-item">
+						<span class="info-tag">25 Fall</span>
+						<p class="info-body">TA for <a href="https://adwaitjog.github.io/teach/uva_4444_f25.html"><b>CS 4444: Introduction to Parallel Computing</b></a></p>
+					</div>
+				</div>
+            </div>
         </div>
 		
 		<div class="container">
 			<heading id="awd">Award</heading>
-            <ol>
-                <li>[<b>Travel Grant</b>] ISPASS'25&ensp;ISCA'25</li>
-            </ol>
+            <div class="info-card">
+				<ul class="plain-card-list">
+					<li>[<b>Travel Grant</b>] ISPASS'25, ISCA'25</li>
+				</ul>
+            </div>
 		</div>
 
 		<div class="container">
 			<heading id="serv">Service</heading>
-            <ol>
-                <li>[<b>SIG</b>] Co-organizer of Systems-Interest-Group meetings at UVA</li>
-                <li>[<b>Artifact Evaluation Committee</b>] IISWC'25</li>
-				<li>[<b>GPU-RIG</b>] Coordinating logistics for <a href="https://engineering.virginia.edu/labs-groups/gpu-accelerated-computing">GPU Research Interest Group</a> across <a href="https://engineering.virginia.edu/">UVA SEAS</a></li>
-				<li>[<b>Submission Chair</b>] IISWC'26</li>
-            </ol>
+            <div class="info-card">
+				<ul class="plain-card-list">
+					<li>[<b>SIG</b>] Co-organizer of Systems-Interest-Group meetings at UVA</li>
+					<li>[<b>Artifact Evaluation Committee</b>] IISWC'25</li>
+					<li>[<b>GPU-RIG</b>] Coordinating logistics for <a href="https://engineering.virginia.edu/labs-groups/gpu-accelerated-computing">GPU Research Interest Group</a> across <a href="https://engineering.virginia.edu/">UVA SEAS</a></li>
+					<li>[<b>Submission Chair</b>] IISWC'26</li>
+				</ul>
+            </div>
 		</div>
 
 		<div class="container">
             <heading id="tools">Useful Tools</heading>
-			<p>
-			<details>
+			<div class="resource-card resource-card--tools">
+			<details class="tool-group">
                 <summary>GPU</summary>
-                <ol>
+                <ol class="tool-list">
 					<li><a href="https://github.com/gpgpu-sim/gpgpu-sim_distribution">GPGPU-Sim</a></li>
 					<li><a href="https://github.com/CMU-SAFARI/Mosaic">Mosaic</a>: virtual memory support</li>
 					<li><a href="https://github.com/DebashisGanguly/gpgpu-sim_UVMSmart">UVMSmart</a>: unified virtual memory support</li>
@@ -302,9 +357,9 @@
 				</ol>
 			</details>
 
-			<details>
+			<details class="tool-group">
 				<summary>Arch</summary>
-					<ol>
+					<ol class="tool-list">
 					<li><a href="https://github.com/SET-Scheduling-Project/GEMINI-HPCA2024">GEMINI (DNN Chiplet)</a></li>
 					<li><a href="https://github.com/VIA-Research/vTrainer">vTrain (LLM Arch)</a></li>
 					<li><a href="https://github.com/PrincetonUniversity/LLMCompass">LLMCompass (LLM HW Arch)</a></li>
@@ -314,9 +369,9 @@
 					</ol>
 				</details>
 				
-				<details>
+				<details class="tool-group">
 				<summary>Memory/Storage</summary>
-					<ol>
+					<ol class="tool-list">
 					<li><a href="https://github.com/zxhero/gem5-CXL.git">Gem5-CXL</a></li>
 					<li><a href="https://github.com/CMU-SAFARI/MQSim">MQSim</a></li>
 					<li><a href="https://github.com/spypaul/MQSim_CXL">MQSim-CXL</a></li>
@@ -326,9 +381,9 @@
 					</ol>
 				</details>
 				
-				<details>
+				<details class="tool-group">
 					<summary>CUDA/GPU Low-level</summary>
-					<ol>
+					<ol class="tool-list">
 					<li><a href="https://github.com/NVlabs/NVBit">NVBit</a>: SASS</li>
 					<li><a href="https://github.com/hgl71964/cuasmrl/tree/reproduce">cuasmrl</a>: SASS+RL</li>
 					<li><a href="https://github.com/UniHD-CEG/cuda-flux">CUDAFlux</a>: LLVM and PTX</li>
@@ -341,23 +396,31 @@
 				</details>
 				
 				
-				<details>
+				<details class="tool-group">
 				<summary>Cryptography</summary>
-					<ol>
+					<ol class="tool-list">
 					<li><a href="./blog/9-20-FHE">FHE, MPC, PIR and Other Libraries</a></li>
 					</ol>
 				</details>
-			</p>
+			</div>
         </div>
 
 		<div class="container">
 			<heading id="memo">Memos</heading>
-			<ol>
+			<div class="resource-card">
+			<ul class="memo-list memo-list--preview">
 				<li>MQ-Sim Tutorial: [<a href="https://www.youtube.com/watch?v=d40ekgmjM98&t=12s&ab_channel=OnurMutluLectures">video</a>][<a href="https://safari.ethz.ch/projects_and_seminars/spring2022/lib/exe/fetch.php?media=pns_modern_ssds_fs2022_4th_before_meeting.pdf">slides</a>]</li>
 				<li>Introduction blogs about Intel SGX: [<a href="https://blog.quarkslab.com/overview-of-intel-sgx-part-1-sgx-internals.html">Part I</a>] [<a href="https://blog.quarkslab.com/overview-of-intel-sgx-part-2-sgx-externals.html">Part II</a>]</li>
 				<li>Basic concepts about Confidential Computing (CC): [<a href="https://confidentialcomputing.io/resources/white-papers-reports/">Whitepapers</a>]</li>
 				<li>Intel AVX-family extension: [<a href="https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html#">Reference</a>]</li>
 				<li>Intel SGX: [<a href="https://www.intel.com/content/www/us/en/developer/tools/software-guard-extensions/library.html">Library</a>]</li>
+			</ul>
+			<details class="memo-more">
+				<summary>
+					<span class="memo-more-open">Show more</span>
+					<span class="memo-more-close">Show less</span>
+				</summary>
+				<ul class="memo-list memo-list--extra">
 				<li>Linux memory management: [<a href="https://docs.kernel.org/mm/index.html">Docs</a>]</li>
 				<li>Page mapping: [<a href="https://github.com/dwks/pagemap">Codes</a>]</li>
 				<li>How to access Linux physical memory (/dev/mem): [<a href="https://github.com/radii/devmem2">Codes</a>] [<a href="https://bakhi.github.io/devmem/">Blog</a>]</li>
@@ -369,24 +432,30 @@
 				<li>System & Arch Conference Deadline: [<a href="https://dants.github.io/index_sysvenues_deadline.html">Link</a>]</li>
 				<li>Security Conference Deadline: [<a href="https://sslab.skku.edu/deadlines.html">Link</a>]</li>
 				<li>ML System papers: [<a href="https://github.com/byungsoo-oh/ml-systems-papers">Link</a>]</li>
-				<li>Resource Collection of Performance Measurement/Analysis [<a href="./blog/6-19-Perf">here</a>]</li></li>
+				<li>Resource Collection of Performance Measurement/Analysis [<a href="./blog/6-19-Perf">here</a>]</li>
 				<li>LaTeX Symbols: [<a href="https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols">Link1</a>] [<a href="https://ctan.math.utah.edu/ctan/tex-archive/info/symbols/comprehensive/symbols-a4.pdf">Link2</a>]</li>
 				<li>Instruction latency: [<a href="https://kib.kiev.ua/x86docs/Intel/ThroughputLatency/336289-002.pdf">PDF1</a>] [<a href="https://www.agner.org/optimize/instruction_tables.pdf">PDF2</a>]</li>
-			</ol>
+				</ul>
+			</details>
+			</div>
 		</div>
 
 		<div class="container">
 			<heading id="oths">Others</heading>
-			<p>
-				<ol>
-				<li><a href="https://taoxiease.github.io/advice/">Advice collection by Prof. Tao Xie</a></li>
-				<li><a href="https://www.youtube.com/live/ywBHYaaqDgI?si=9xg-ElQIraAQBJOZ"> A nice talk by Prof. Lin Zhong</a></li>
-				</ol>
-			</p>
+			<div class="info-card">
+				<ul class="plain-card-list">
+					<li><a href="https://taoxiease.github.io/advice/">Advice collection by Prof. Tao Xie</a></li>
+					<li><a href="https://www.youtube.com/live/ywBHYaaqDgI?si=9xg-ElQIraAQBJOZ">A nice talk by Prof. Lin Zhong</a></li>
+				</ul>
+			</div>
+		</div>
 
 		<div class="container">
 			<p style="text-align:center;">
 				Last updated: <span id="lastUpdated"></span>
+			</p>
+			<p class="footer-note">
+				Copyright &copy; 2026 Yang Yang and Codex
 			</p>
 		</div>
 		<!-- <script> const el = document.getElementById("lastUpdated"); if (el) { const lastMod = new Date(document.lastModified); const options = { year: 'numeric', month: 'long', day: 'numeric' }; el.textContent = lastMod.toLocaleDateString(undefined, options); } </script> -->
