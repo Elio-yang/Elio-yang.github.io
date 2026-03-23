@@ -11,14 +11,15 @@
 
 <script>
 	function toggle_abstract(btn) {
-	  const absDiv = btn.nextElementSibling;
-	  if (absDiv.style.display === "none") {
-		absDiv.style.display = "block";
-		btn.textContent = "[Hide Brief]";
-	  } else {
-		absDiv.style.display = "none";
-		btn.textContent = "[Show Brief]";
+	  const card = btn.closest(".publication-card");
+	  const absDiv = card ? card.querySelector(".abstract-text") : null;
+	  if (!absDiv) {
+		return;
 	  }
+	  const isExpanded = btn.getAttribute("aria-expanded") === "true";
+	  absDiv.hidden = isExpanded;
+	  btn.setAttribute("aria-expanded", String(!isExpanded));
+	  btn.textContent = isExpanded ? "Show Brief" : "Hide Brief";
 	}
 </script>
 
@@ -87,34 +88,56 @@
 		<div class="container">
 			<heading id="news">News</heading>
 
-			<div class="news-item">
-				<div class="date">[January 2026]</div>
-				<div class="content">
-				I will join <a href="https://www.nvidia.com/en-us/" style="color: #76B900; text-decoration: none; font-weight: bold;">NVIDIA</a> this summer as a Hardware Security Intern!
-				Special thanks to <a href="https://zzrcxb.me/">Neil</a>, <a href="https://www.linkedin.com/in/siddhartha-chhabra-a513a94/">Sid</a>, <a href="https://www.linkedin.com/in/ambarishvyas/">Ambarish</a> and <a href="https://research.nvidia.com/person/edward-suh">Edward</a> for the insightful conversations and for making this possible.
-				See you in Santa Clara!
-				</div>
-			</div>
+			<div class="news-list">
+				<article class="news-item">
+					<time class="news-date" datetime="2026-01">
+						<span class="news-month">Jan</span>
+						<span class="news-year">2026</span>
+					</time>
+					<div class="news-card">
+						<p>
+							I will join <a href="https://www.nvidia.com/en-us/" style="color: #76B900; text-decoration: none; font-weight: bold;">NVIDIA</a> this summer as a Hardware Security Intern!
+							Special thanks to <a href="https://zzrcxb.me/">Neil</a>, <a href="https://www.linkedin.com/in/siddhartha-chhabra-a513a94/">Sid</a>, <a href="https://www.linkedin.com/in/ambarishvyas/">Ambarish</a> and <a href="https://research.nvidia.com/person/edward-suh">Edward</a> for the insightful conversations and for making this possible.
+							See you in Santa Clara!
+						</p>
+					</div>
+				</article>
 
-			<div class="news-item">
-				<div class="date">[December 2025]</div>
-				<div class="content">
-					Passed my <a href="https://engineering.virginia.edu/news-events/events/phd-qualifying-exam-presentation-yang-yang">PhD Qualifying Exam</a>.
-				</div>
-			</div>
+				<article class="news-item">
+					<time class="news-date" datetime="2025-12">
+						<span class="news-month">Dec</span>
+						<span class="news-year">2025</span>
+					</time>
+					<div class="news-card">
+						<p>
+							Passed my <a href="https://engineering.virginia.edu/news-events/events/phd-qualifying-exam-presentation-yang-yang">PhD Qualifying Exam</a>.
+						</p>
+					</div>
+				</article>
 
-			<div class="news-item">
-				<div class="date">[March 2025]</div>
-				<div class="content">
-					NetCrafter got accepted by <a href="https://iscaconf.org/isca2025/">ISCA'25</a>, see you in Tokyo!
-				</div>
-			</div>
+				<article class="news-item">
+					<time class="news-date" datetime="2025-03">
+						<span class="news-month">Mar</span>
+						<span class="news-year">2025</span>
+					</time>
+					<div class="news-card">
+						<p>
+							NetCrafter got accepted by <a href="https://iscaconf.org/isca2025/">ISCA'25</a>, see you in Tokyo!
+						</p>
+					</div>
+				</article>
 
-			<div class="news-item">
-				<div class="date">[March 2025]</div>
-				<div class="content">
-					One paper got accepted by <a href="https://ispass.org/ispass2025/">ISPASS'25</a>, see you in Ghent!
-				</div>
+				<article class="news-item">
+					<time class="news-date" datetime="2025-03">
+						<span class="news-month">Mar</span>
+						<span class="news-year">2025</span>
+					</time>
+					<div class="news-card">
+						<p>
+							One paper got accepted by <a href="https://ispass.org/ispass2025/">ISPASS'25</a>, see you in Ghent!
+						</p>
+					</div>
+				</article>
 			</div>
 		</div>
 
@@ -169,50 +192,69 @@
 
         <div class="container">
             <heading id="pub">Publications</heading>
-            <ol>
-				<li>
-                    <span class="highlight2">(Under Review)</span><br>
-                    <b>Performance-efficient GPU-based Confidential Computing: Are we there yet?</b><br>
-                    <b>Yang Yang</b>, Adwait Jog<br>
-					<!-- In the Proceedings of ACM International Symposium on Computer Architecture, Tokyo, Japan, June 2025 <br> -->
-                    <!-- In the Proceedings of The International Symposium on Computer Architecture, Tokyo, Japen, June 2025 <br> -->
-					<!-- <a href="https://dl.acm.org/doi/10.1145/3695053.3731040">[PDF]</a>&ensp;<a href="./file/ISCA25_NetCrafter.pdf">[Slides.pdf]</a>&ensp;<a href="./file/netcrafter_isca25.pptx">[Slides.pptx]</a>&ensp;<a href="./coming">[Code]</a>&ensp; -->
-					<a class="abstract-btn" onclick="toggle_abstract(this)">[Show Brief]</a>&ensp;
-					<div class="abstract-text" style="display: none;">
+            <div class="publication-list">
+				<article class="publication-card publication-card--review">
+					<div class="publication-header">
+						<span class="publication-badge">Under Review</span>
+					</div>
+					<h3 class="publication-title">Performance-efficient GPU-based Confidential Computing: Are we there yet?</h3>
+					<p class="publication-authors"><b>Yang Yang</b>, Adwait Jog</p>
+					<!-- <p class="publication-meta">Ongoing work on performance-efficient confidential computing for GPU-based systems.</p> -->
+					<div class="publication-actions">
+						<button type="button" class="abstract-btn" aria-expanded="false" onclick="toggle_abstract(this)">Show Brief</button>
+					</div>
+					<div class="abstract-text" hidden>
 						<p>
 							Building on our ISPASS'25 results, we propose <b>X</b>. Our evaluation shows that <b>X</b> largely reduces CC overhead, achieving significant speedup (up to 5.1x).
 						</p>
 					</div>
-                </li>
-				<br>
-                <li>
-                    <span class="highlight2">(ISCA'25)</span><br>
-                    <b>NetCrafter: Tailoring Network Traffic for Non-Uniform Bandwidth Multi-GPU Systems</b><br>
-                    Amel Fatima, <b>Yang Yang</b>, Yifan Sun, Rachata Ausavarungnirun, Adwait Jog<br>
-					In the Proceedings of ACM International Symposium on Computer Architecture, Tokyo, Japan, June 2025 <br>
-                    <!-- In the Proceedings of The International Symposium on Computer Architecture, Tokyo, Japen, June 2025 <br> -->
-					<a href="https://dl.acm.org/doi/10.1145/3695053.3731040">[PDF]</a>&ensp;<a href="./file/ISCA25_NetCrafter.pdf">[Slides.pdf]</a>&ensp;<a href="./file/netcrafter_isca25.pptx">[Slides.pptx]</a>&ensp;<a href="./coming">[Code]</a>&ensp;
-					<a class="abstract-btn" onclick="toggle_abstract(this)">[Show Brief]</a>&ensp;
-					<div class="abstract-text" style="display: none;">
+				</article>
+
+				<article class="publication-card">
+					<div class="publication-header">
+						<span class="publication-badge">ISCA'25</span>
+						<span class="publication-year">2025</span>
+					</div>
+					<h3 class="publication-title">NetCrafter: Tailoring Network Traffic for Non-Uniform Bandwidth Multi-GPU Systems</h3>
+					<p class="publication-authors">Amel Fatima, <b>Yang Yang</b>, Yifan Sun, Rachata Ausavarungnirun, Adwait Jog</p>
+					<p class="publication-meta">In the Proceedings of ACM International Symposium on Computer Architecture, Tokyo, Japan, June 2025</p>
+					<div class="publication-actions">
+						<a class="publication-link" href="https://dl.acm.org/doi/10.1145/3695053.3731040">PDF</a>
+						<a class="publication-link" href="./file/ISCA25_NetCrafter.pdf">Slides.pdf</a>
+						<a class="publication-link" href="./file/netcrafter_isca25.pptx">Slides.pptx</a>
+						<a class="publication-link" href="./coming">Code</a>
+						<button type="button" class="abstract-btn" aria-expanded="false" onclick="toggle_abstract(this)">Show Brief</button>
+					</div>
+					<div class="abstract-text" hidden>
 						<p>
 							We present <b>NetCrafter</b>, a set of novel techniques to manage network traffic, especially across low-bandwidth links in multi-GPU systems.
-							  NetCrafter reduces the volume of flit traffic by (i) stitching compatible, partially filled flits, (ii) trimming unnecessary flits to avoid redundant transfers, and (iii) sequencing flits so that latency-sensitive ones arrive at their destinations faster.
+							NetCrafter reduces the volume of flit traffic by (i) stitching compatible, partially filled flits, (ii) trimming unnecessary flits to avoid redundant transfers, and (iii) sequencing flits so that latency-sensitive ones arrive at their destinations faster.
 						</p>
 					</div>
-                </li>
-				<br>
-                <li>
-                    <span class="highlight2">(ISPASS'25)</span><br>
-                    <b>Dissecting Performance Overheads of Confidential Computing on GPU-based Systems</b><br>
-                    <b>Yang Yang</b>, Mohammad Sonji, Adwait Jog<br>
-                    In the Proceedings of IEEE International Symposium on Performance Analysis of Systems and Software, Ghent, Belgium, May 2025 <br>
-					<a href="https://ieeexplore.ieee.org/document/11096367">[PDF]</a>&ensp;<a href="./file/ispass-25-slides.pdf">[Talk@ISPASS]</a>&ensp;<a href="https://www.confidentialcomputingsummit.com/e/ccs25">[Talk@CC-Summit]</a>&ensp;<a href="https://adwaitjog.github.io/docs/pdf/CCSummit-June18.pdf">[Artifact Available]</a>&ensp;<a class="abstract-btn" onclick="toggle_abstract(this)">[Show Brief]</a>&ensp;
-					<div class="abstract-text" style="display: none;">
-						<p>
-							Confidential computing (CC) is a critical technology for protecting data in use. By leveraging encryption and virtual machine (VM) level isolation, CC allows existing code to run without modification while offering confidentiality and integrity guarantees. However, the performance impact of CC in GPU-based systems can be significant. In this work, we present a comprehensive performance evaluation of CC guided by a simple performance model. Specifically, we start by evaluating CUDA applications with a focus on data transfer, memory management, encryption, kernel launch, and kernel execution. We also present a detailed event-level analysis of these applications, revealing that the execution times of kernels that do not use unified virtual memory (UVM) are mostly unaffected, while associated kernel launch overhead and queuing time increase significantly. On the other hand, the execution time of kernels using UVM increases drastically under CC, in addition to other launch and queuing overheads. We also study CNN training and LLM inference to see how CC overhead would affect them. Finally, we consider several optimization techniques, including kernel fusion, overlapping, and quantization, towards addressing the overheads of CC.							</p>
+				</article>
+
+				<article class="publication-card">
+					<div class="publication-header">
+						<span class="publication-badge">ISPASS'25</span>
+						<span class="publication-year">2025</span>
 					</div>
-                </li>
-            </ol>
+					<h3 class="publication-title">Dissecting Performance Overheads of Confidential Computing on GPU-based Systems</h3>
+					<p class="publication-authors"><b>Yang Yang</b>, Mohammad Sonji, Adwait Jog</p>
+					<p class="publication-meta">In the Proceedings of IEEE International Symposium on Performance Analysis of Systems and Software, Ghent, Belgium, May 2025</p>
+					<div class="publication-actions">
+						<a class="publication-link" href="https://ieeexplore.ieee.org/document/11096367">PDF</a>
+						<a class="publication-link" href="./file/ispass-25-slides.pdf">Talk@ISPASS</a>
+						<a class="publication-link" href="https://www.confidentialcomputingsummit.com/e/ccs25">Talk@CC-Summit</a>
+						<a class="publication-link" href="https://adwaitjog.github.io/docs/pdf/CCSummit-June18.pdf">Artifact Available</a>
+						<button type="button" class="abstract-btn" aria-expanded="false" onclick="toggle_abstract(this)">Show Brief</button>
+					</div>
+					<div class="abstract-text" hidden>
+						<p>
+							Confidential computing (CC) is a critical technology for protecting data in use. By leveraging encryption and virtual machine (VM) level isolation, CC allows existing code to run without modification while offering confidentiality and integrity guarantees. However, the performance impact of CC in GPU-based systems can be significant. In this work, we present a comprehensive performance evaluation of CC guided by a simple performance model. Specifically, we start by evaluating CUDA applications with a focus on data transfer, memory management, encryption, kernel launch, and kernel execution. We also present a detailed event-level analysis of these applications, revealing that the execution times of kernels that do not use unified virtual memory (UVM) are mostly unaffected, while associated kernel launch overhead and queuing time increase significantly. On the other hand, the execution time of kernels using UVM increases drastically under CC, in addition to other launch and queuing overheads. We also study CNN training and LLM inference to see how CC overhead would affect them. Finally, we consider several optimization techniques, including kernel fusion, overlapping, and quantization, towards addressing the overheads of CC.
+						</p>
+					</div>
+				</article>
+            </div>
         </div>
 
         <div class="container">
