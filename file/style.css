@@ -1009,11 +1009,48 @@ span.highlight3 {
 
 html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 @media (max-width: 700px) {
     :root {
         --content-copy-size: 17px;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    name {
+        font-size: 34px;
+    }
+
+    heading {
+        font-size: 22px;
+    }
+
+    .navbar {
+        padding: 8px 12px;
+        text-align: left;
+        white-space: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 0 14px 0 0;
+        font-size: 17px;
+    }
+
+    .intro-panel {
+        padding: 14px 16px;
+        border-radius: 16px;
+    }
+
+    .intro-lead {
+        font-size: 20px;
     }
 
     .interests-panel {
@@ -1022,12 +1059,12 @@ html {
     }
 
     .interests-lead {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .interest-pill {
-        font-size: 19px;
-        padding: 6px 12px;
+        font-size: 17px;
+        padding: 6px 11px;
     }
 
     .interest-notes {
@@ -1105,7 +1142,7 @@ html {
     }
 
     .tool-group summary {
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .tool-list {
@@ -1114,7 +1151,7 @@ html {
     }
 
     .memo-more summary {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .publication-card {
@@ -1123,12 +1160,12 @@ html {
     }
 
     .publication-title {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .publication-link,
     .abstract-btn {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .news-item {
@@ -1154,8 +1191,13 @@ html {
 
     .news-month,
     .news-year {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1;
+    }
+
+    .footer-meta,
+    .footer-note {
+        font-size: 16px;
     }
 
 }
