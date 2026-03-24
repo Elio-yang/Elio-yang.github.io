@@ -71,6 +71,10 @@
   font-style: normal;
 }
 
+:root {
+  --content-copy-size: 18px;
+}
+
 
 #avatar {
   display: block;
@@ -150,7 +154,7 @@ div.publication {
 .interests-lead {
   margin: 0;
   color: #1f2f49;
-  font-size: 21px;
+  font-size: 22px;
   line-height: 1.5;
   text-align: center;
 }
@@ -169,7 +173,7 @@ div.publication {
   justify-content: center;
   padding: 6px 13px;
   border-radius: 999px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.2px;
   border: 1px solid transparent;
@@ -210,8 +214,6 @@ div.publication {
   grid-template-columns: 132px 1fr;
   gap: 14px;
   align-items: start;
-  padding-top: 8px;
-  border-top: 1px solid #dce4f1;
 }
 
 .interest-note-label {
@@ -227,7 +229,7 @@ div.publication {
 .interest-note-text {
   margin: 0;
   color: #34405a;
-  font-size: 19px;
+  font-size: var(--content-copy-size);
   line-height: 1.5;
 }
 
@@ -284,7 +286,7 @@ div.publication {
 .education-school {
   margin: 4px 0 0;
   color: #5a6580;
-  font-size: 18px;
+  font-size: var(--content-copy-size);
 }
 
 .education-period {
@@ -348,7 +350,7 @@ div.publication {
 .experience-affiliation {
   margin: 4px 0 0;
   color: #5a6580;
-  font-size: 18px;
+  font-size: var(--content-copy-size);
 }
 
 .experience-period {
@@ -373,7 +375,7 @@ div.publication {
 .experience-details p {
   margin: 0;
   color: #2f3950;
-  font-size: 19px;
+  font-size: var(--content-copy-size);
   line-height: 1.5;
 }
 
@@ -436,7 +438,7 @@ div.publication {
 .info-body {
   margin: 0;
   color: #2f3950;
-  font-size: 19px;
+  font-size: var(--content-copy-size);
   line-height: 1.5;
 }
 
@@ -444,18 +446,21 @@ div.publication {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  gap: 10px;
 }
 
 .plain-card-list li {
   margin: 0;
   color: #2f3950;
+  font-size: var(--content-copy-size);
   line-height: 1.5;
 }
 
 .plain-card-list li + li {
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid #dde5f2;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
 }
 
 .tool-group {
@@ -464,8 +469,8 @@ div.publication {
 
 .tool-group + .tool-group {
   margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid #dde5f2;
+  padding-top: 0;
+  border-top: none;
 }
 
 .tool-group summary {
@@ -515,6 +520,7 @@ div.publication {
 .tool-list li {
   position: relative;
   padding-left: 14px;
+  font-size: var(--content-copy-size);
   line-height: 1.45;
   color: #2f3950;
 }
@@ -539,12 +545,13 @@ div.publication {
   position: relative;
   padding-left: 18px;
   color: #2f3950;
+  font-size: var(--content-copy-size);
   line-height: 1.5;
 }
 
 .memo-list li + li {
-  padding-top: 10px;
-  border-top: 1px solid #dde5f2;
+  padding-top: 0;
+  border-top: none;
 }
 
 .memo-list li::before {
@@ -560,8 +567,8 @@ div.publication {
 
 .memo-more {
   margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid #dde5f2;
+  padding-top: 0;
+  border-top: none;
 }
 
 .memo-more summary {
@@ -614,7 +621,7 @@ div.publication {
     radial-gradient(circle at top left, rgba(47, 99, 179, 0.10), transparent 32%),
     linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
   box-shadow: 0 10px 24px rgba(25, 47, 89, 0.08);
-  font-size: 19px;
+  font-size: var(--content-copy-size);
 }
 
 .publication-card--review {
@@ -672,7 +679,7 @@ div.publication {
 .publication-meta {
   margin-top: 8px;
   color: #5a6580;
-  font-size: 18px;
+  font-size: var(--content-copy-size);
 }
 
 .publication-actions {
@@ -953,7 +960,7 @@ span.highlight3 {
   background: #ffffff;
   box-shadow: 0 10px 24px rgba(25, 47, 89, 0.07);
   color: #24324a;
-  font-size: 19px;
+  font-size: var(--content-copy-size);
 }
 
 .news-card p {
@@ -985,11 +992,19 @@ span.highlight3 {
     text-decoration: underline;
 }
 
+.footer-meta,
 .footer-note {
-    margin-top: -8px;
     text-align: center;
     color: #5a6580;
     font-size: 17px;
+}
+
+.footer-meta {
+    margin: 0;
+}
+
+.footer-note {
+    margin-top: -8px;
 }
 
 html {
@@ -997,17 +1012,21 @@ html {
 }
 
 @media (max-width: 700px) {
+    :root {
+        --content-copy-size: 17px;
+    }
+
     .interests-panel {
         padding: 15px;
         border-radius: 18px;
     }
 
     .interests-lead {
-        font-size: 19px;
+        font-size: 22px;
     }
 
     .interest-pill {
-        font-size: 16px;
+        font-size: 19px;
         padding: 6px 12px;
     }
 
@@ -1022,10 +1041,6 @@ html {
 
     .interest-note-label {
         font-size: 15px;
-    }
-
-    .interest-note-text {
-        font-size: 18px;
     }
 
     .education-item {
@@ -1050,10 +1065,6 @@ html {
         font-size: 21px;
     }
 
-    .education-school {
-        font-size: 17px;
-    }
-
     .education-period {
         font-size: 15px;
         padding: 5px 10px;
@@ -1066,11 +1077,6 @@ html {
 
     .experience-title {
         font-size: 21px;
-    }
-
-    .experience-affiliation,
-    .experience-details p {
-        font-size: 17px;
     }
 
     .experience-period {
@@ -1098,10 +1104,6 @@ html {
         font-size: 14px;
     }
 
-    .info-body {
-        font-size: 17px;
-    }
-
     .tool-group summary {
         font-size: 19px;
     }
@@ -1109,10 +1111,6 @@ html {
     .tool-list {
         grid-template-columns: 1fr;
         gap: 8px;
-    }
-
-    .memo-list li {
-        font-size: 17px;
     }
 
     .memo-more summary {
@@ -1128,10 +1126,9 @@ html {
         font-size: 22px;
     }
 
-    .publication-meta,
     .publication-link,
     .abstract-btn {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .news-item {
@@ -1161,7 +1158,4 @@ html {
         line-height: 1;
     }
 
-    .news-card {
-        font-size: 18px;
-    }
 }
