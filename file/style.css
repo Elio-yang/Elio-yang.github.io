@@ -73,59 +73,60 @@
 
 :root {
   --content-copy-size: 18px;
-  --page-bg: #EEE7DC;
-  --page-radial-1: rgba(139, 107, 78, 0.10);
-  --page-radial-2: rgba(63, 88, 114, 0.08);
+  --page-bg: #0F1012;
+  --page-radial-1: rgba(109, 119, 139, 0.20);
+  --page-radial-2: rgba(60, 70, 84, 0.18);
   --paper-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
-  --canvas-bg: rgba(247, 241, 231, 0.94);
-  --canvas-border: rgba(96, 83, 70, 0.18);
-  --canvas-shadow: 0 28px 60px rgba(43, 33, 25, 0.12);
-  --surface-bg: #FBF7F0;
-  --surface-alt-bg: #FFFDF8;
-  --surface-soft: #F4EDE2;
-  --surface-border: #D7CEC1;
-  --surface-shadow: 0 12px 28px rgba(43, 33, 25, 0.08);
-  --surface-shadow-strong: 0 16px 32px rgba(43, 33, 25, 0.10);
-  --text-primary: #1C1815;
-  --text-secondary: #5E564E;
-  --text-tertiary: #756A61;
-  --text-heading: #27211C;
-  --text-inverse: #FFFAF4;
-  --link-color: #3F5872;
-  --link-hover: #2D4158;
-  --accent-primary: #3F5872;
-  --accent-primary-soft: rgba(63, 88, 114, 0.14);
-  --accent-primary-line: rgba(63, 88, 114, 0.24);
-  --accent-secondary: #8B6B4E;
-  --accent-secondary-soft: rgba(139, 107, 78, 0.14);
-  --accent-secondary-line: rgba(139, 107, 78, 0.26);
-  --accent-olive: #6B6A58;
-  --accent-olive-soft: rgba(107, 106, 88, 0.12);
-  --accent-olive-line: rgba(107, 106, 88, 0.24);
-  --accent-rose: #7A5747;
-  --accent-rose-soft: rgba(122, 87, 71, 0.13);
-  --divider-color: rgba(95, 84, 74, 0.14);
-  --nav-bg: rgba(251, 247, 240, 0.84);
-  --nav-border: rgba(95, 84, 74, 0.14);
-  --badge-bg: #ECE4D9;
-  --badge-text: #3F5872;
-  --badge-review-bg: #F1E4D3;
-  --badge-review-text: #8B6B4E;
-  --button-bg: #F2EBE0;
-  --button-border: #D8CBB7;
-  --button-hover: #E7DECE;
-  --button-active-bg: #3F5872;
-  --button-active-border: #3F5872;
-  --button-active-text: #FFFAF4;
-  --timeline-line: rgba(63, 88, 114, 0.20);
-  --timeline-dot: #6A5448;
-  --note-label-color: #4E4137;
-  --footer-color: #70665D;
-  --logo-border: rgba(95, 84, 74, 0.16);
-  --logo-shadow: 0 8px 20px rgba(43, 33, 25, 0.08);
-  --highlight-red: #8A4A3B;
-  --highlight-green: #66715C;
-  --highlight-emphasis: #8A4A3B;
+  --canvas-bg: rgba(18, 20, 24, 0.94);
+  --canvas-border: rgba(255, 255, 255, 0.08);
+  --canvas-shadow: 0 30px 72px rgba(0, 0, 0, 0.42);
+  --surface-bg: #17191D;
+  --surface-alt-bg: #1B1E23;
+  --surface-soft: #14171B;
+  --surface-border: #2A2E36;
+  --surface-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+  --surface-shadow-strong: 0 16px 36px rgba(0, 0, 0, 0.30);
+  --text-primary: #F3F2EE;
+  --text-secondary: #B5B2AA;
+  --text-tertiary: #8E918F;
+  --text-heading: #FAF8F3;
+  --text-inverse: #131519;
+  --link-color: #D4DCE8;
+  --link-hover: #F3F6FA;
+  --accent-primary: #D4DCE8;
+  --accent-primary-soft: rgba(212, 220, 232, 0.10);
+  --accent-primary-line: rgba(212, 220, 232, 0.18);
+  --accent-secondary: #CBBCA9;
+  --accent-secondary-soft: rgba(203, 188, 169, 0.10);
+  --accent-secondary-line: rgba(203, 188, 169, 0.18);
+  --accent-olive: #9AA18F;
+  --accent-olive-soft: rgba(154, 161, 143, 0.10);
+  --accent-olive-line: rgba(154, 161, 143, 0.18);
+  --accent-rose: #B49A8E;
+  --accent-rose-soft: rgba(180, 154, 142, 0.10);
+  --accent-rose-line: rgba(180, 154, 142, 0.18);
+  --divider-color: rgba(255, 255, 255, 0.08);
+  --nav-bg: rgba(20, 22, 26, 0.82);
+  --nav-border: rgba(255, 255, 255, 0.07);
+  --badge-bg: #20242A;
+  --badge-text: #DCE4F0;
+  --badge-review-bg: #23211F;
+  --badge-review-text: #D8C6B1;
+  --button-bg: #1E2228;
+  --button-border: #313641;
+  --button-hover: #282D34;
+  --button-active-bg: #E7E4DD;
+  --button-active-border: #E7E4DD;
+  --button-active-text: #111318;
+  --timeline-line: rgba(212, 220, 232, 0.14);
+  --timeline-dot: #DCE4F0;
+  --note-label-color: #D1D7E0;
+  --footer-color: #9298A1;
+  --logo-border: rgba(255, 255, 255, 0.07);
+  --logo-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  --highlight-red: #D8C6B1;
+  --highlight-green: #AEB8A6;
+  --highlight-emphasis: #E7D8C5;
 }
 
 
@@ -135,7 +136,7 @@
   margin-right: auto;
   width: 110px;
   /* border-radius: 90%; */
-  box-shadow: 0 0 0 0.1em #ddd;
+  box-shadow: 0 0 0 0.1em rgba(255, 255, 255, 0.14);
 }
 
 div.canvas {
@@ -154,9 +155,9 @@ div.canvas::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.10)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015)),
     var(--paper-noise);
-  opacity: 0.22;
+  opacity: 0.14;
 }
 
 div.canvas > * {
@@ -182,7 +183,7 @@ div.container {
   padding: 16px 18px;
   border-radius: 18px;
   border: 1px solid var(--surface-border);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.48) 0%, var(--surface-soft) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, var(--surface-soft) 100%);
   box-shadow: var(--surface-shadow);
 }
 
@@ -254,7 +255,7 @@ div.publication {
 .interest-pill--gpu {
   color: var(--accent-rose);
   background: var(--accent-rose-soft);
-  border-color: rgba(122, 87, 71, 0.22);
+  border-color: var(--accent-rose-line);
 }
 
 .interest-pill--trusted {
@@ -819,10 +820,11 @@ span.highlight3 {
     z-index: -1;
     pointer-events: none;
     background-image:
-      radial-gradient(circle at top left, var(--page-radial-1), transparent 46%),
-      radial-gradient(circle at bottom right, var(--page-radial-2), transparent 42%),
+      radial-gradient(circle at top left, var(--page-radial-1), transparent 42%),
+      radial-gradient(circle at bottom right, var(--page-radial-2), transparent 40%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.018), rgba(255, 255, 255, 0)),
       var(--paper-noise);
-    opacity: 0.55;
+    opacity: 0.46;
   }
   
   heading {
@@ -947,7 +949,7 @@ span.highlight3 {
     padding: 16px 18px;
     border-radius: 14px;
     border: 1px solid var(--surface-border);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.34) 0%, var(--surface-soft) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, var(--surface-soft) 100%);
     color: var(--text-primary);
   }
 
@@ -970,7 +972,7 @@ span.highlight3 {
   bottom: 18px;
   left: 46px;
   width: 2px;
-  background: linear-gradient(180deg, var(--timeline-line) 0%, rgba(139, 107, 78, 0.16) 100%);
+  background: linear-gradient(180deg, var(--timeline-line) 0%, rgba(203, 188, 169, 0.12) 100%);
 }
 
 .news-item {
