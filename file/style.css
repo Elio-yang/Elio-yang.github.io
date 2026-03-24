@@ -91,8 +91,8 @@
   --text-tertiary: #8E918F;
   --text-heading: #FAF8F3;
   --text-inverse: #131519;
-  --link-color: #D4DCE8;
-  --link-hover: #F3F6FA;
+  --link-color: #aeb8fe;
+  --link-hover: #7DCCED;
   --accent-primary: #D4DCE8;
   --accent-primary-soft: rgba(212, 220, 232, 0.10);
   --accent-primary-line: rgba(212, 220, 232, 0.18);
@@ -202,6 +202,7 @@ div.container {
 
 .intro-panel a:hover {
   color: var(--link-hover);
+  text-decoration-color: var(--accent-secondary-line);
 }
 
 .intro-panel .intro-lead + .intro-lead {
@@ -1043,6 +1044,16 @@ span.highlight3 {
 .news-card p {
   margin: 0;
   line-height: 1.5;
+}
+
+.news-card a,
+.news-card a:visited {
+  color: var(--link-color);
+}
+
+.news-card a:hover {
+  color: var(--link-hover);
+  text-decoration-color: var(--accent-secondary-line);
 }
 
 .navbar {
