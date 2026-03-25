@@ -92,8 +92,8 @@
   --text-heading: #FAF8F3;
   --text-inverse: #131519;
   --link-color: #aeb8fe;
-  --link-hover: #7DCCED;
-  --accent-primary: #D4DCE8;
+  --link-hover: #b0dbee;
+  --accent-primary: #aeb8fe;
   --accent-primary-soft: rgba(212, 220, 232, 0.10);
   --accent-primary-line: rgba(212, 220, 232, 0.18);
   --accent-secondary: #CBBCA9;
@@ -120,7 +120,7 @@
   --button-active-text: #111318;
   --timeline-line: rgba(212, 220, 232, 0.14);
   --timeline-dot: #DCE4F0;
-  --note-label-color: #D1D7E0;
+  --note-label-color: #FFCDA2;
   --footer-color: #9298A1;
   --logo-border: rgba(255, 255, 255, 0.07);
   --logo-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
