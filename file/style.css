@@ -91,6 +91,7 @@
   --text-tertiary: #8E918F;
   --text-heading: #FAF8F3;
   --text-inverse: #131519;
+  --author-highlight: #ff8c00;
   --link-color: #aeb8fe;
   --link-hover: #b0dbee;
   --accent-primary: #aeb8fe;
@@ -750,6 +751,11 @@ div.publication {
 
 .publication-authors {
   color: var(--text-primary);
+}
+
+.publication-authors b {
+  color: var(--author-highlight);
+  font-weight: bold;
 }
 
 .publication-meta {
