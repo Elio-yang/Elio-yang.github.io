@@ -90,6 +90,8 @@
   --text-secondary: #B5B2AA;
   --text-tertiary: #8E918F;
   --text-heading: #FAF8F3;
+  --section-heading: #C4D1E6;
+  --section-heading-line: rgba(174, 184, 254, 0.26);
   --text-inverse: #131519;
   --author-highlight: #ff8c00;
   --link-color: #aeb8fe;
@@ -838,7 +840,7 @@ span.highlight3 {
   
   heading {
     font-family: Georgia;
-    color: var(--text-heading);
+    color: var(--section-heading);
     font-size: 25px;
     font-weight: bold;
     margin-top: 0px;
@@ -846,7 +848,7 @@ span.highlight3 {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
-    text-decoration-color: var(--accent-secondary-line);
+    text-decoration-color: var(--section-heading-line);
   }
 
   .clustrmaps-container {
