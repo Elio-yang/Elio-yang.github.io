@@ -73,11 +73,11 @@
 
 :root {
   --content-copy-size: 18px;
-  --page-bg: #0F1012;
-  --page-radial-1: rgba(109, 119, 139, 0.20);
-  --page-radial-2: rgba(60, 70, 84, 0.18);
-  --paper-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
-  --canvas-bg: rgba(18, 20, 24, 0.94);
+  --page-bg: #0b0b0f;
+  --page-radial-1: rgba(255, 255, 255, 0.03);
+  --page-radial-2: rgba(110, 126, 158, 0.05);
+  --paper-noise: none;
+  --canvas-bg: rgba(15, 17, 21, 0.95);
   --canvas-border: rgba(255, 255, 255, 0.08);
   --canvas-shadow: 0 30px 72px rgba(0, 0, 0, 0.42);
   --surface-bg: #17191D;
@@ -92,6 +92,37 @@
   --text-heading: #FAF8F3;
   --section-heading: #C4D1E6;
   --section-heading-line: rgba(174, 184, 254, 0.26);
+  --publication-title-gradient: linear-gradient(
+    94deg,
+    #f8fbff 0%,
+    #dcecff 22%,
+    #b7d6ff 48%,
+    #94b4ff 74%,
+    #8f9eff 100%
+  );
+  --identity-gradient: linear-gradient(
+    96deg,
+    #fbfaff 0%,
+    #e4e0ff 26%,
+    #b9b8ef 58%,
+    #8e93d8 100%
+  );
+  --experience-title-gradient: linear-gradient(
+    96deg,
+    #f4fbfb 0%,
+    #d8f1ee 24%,
+    #aee1d9 50%,
+    #74c6ba 76%,
+    #4aa59f 100%
+  );
+  --education-title-gradient: linear-gradient(
+    96deg,
+    #fbfbf8 0%,
+    #f0ece6 26%,
+    #e3ddd4 52%,
+    #cfc8bb 78%,
+    #b8b2a7 100%
+  );
   --text-inverse: #131519;
   --author-highlight: #ff8c00;
   --link-color: #aeb8fe;
@@ -157,10 +188,8 @@ div.canvas::before {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background-image:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015)),
-    var(--paper-noise);
-  opacity: 0.14;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.008));
+  opacity: 0.12;
 }
 
 div.canvas > * {
@@ -172,6 +201,34 @@ name {
   font-family: Georgia, 'consolaslxgw';
   font-size: 40px;
   color: var(--text-heading);
+}
+
+.identity-block {
+  color: #e4e0ff;
+  text-shadow: 0 0 18px rgba(142, 147, 216, 0.06);
+}
+
+.identity-block name,
+.identity-block .identity-meta {
+  display: inline-block;
+}
+
+.identity-block .identity-meta {
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .identity-block name,
+  .identity-block .identity-meta {
+    background-image: var(--identity-gradient);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 
 div.container {
@@ -223,7 +280,7 @@ div.publication {
   border: 1px solid var(--surface-border);
   border-radius: 20px;
   background:
-    radial-gradient(circle at top right, var(--accent-primary-soft), transparent 34%),
+    radial-gradient(circle at top right, rgba(174, 184, 254, 0.055), transparent 28%),
     linear-gradient(180deg, var(--surface-alt-bg) 0%, var(--surface-bg) 100%);
   box-shadow: var(--surface-shadow-strong);
 }
@@ -358,6 +415,19 @@ div.publication {
   font-size: 24px;
   line-height: 1.2;
   color: var(--text-heading);
+  text-shadow: 0 0 16px rgba(227, 221, 212, 0.05);
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .education-degree {
+    background-image: var(--education-title-gradient);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 
 .education-school {
@@ -411,6 +481,7 @@ div.publication {
   font-size: 24px;
   line-height: 1.2;
   color: var(--text-heading);
+  text-shadow: 0 0 18px rgba(116, 198, 186, 0.08);
 }
 
 .experience-title a,
@@ -422,6 +493,25 @@ div.publication {
 .experience-title a:hover {
   color: var(--accent-olive);
   text-decoration: none;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .experience-title,
+  .experience-title a,
+  .experience-title a:visited {
+    background-image: var(--experience-title-gradient);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .experience-title a:hover {
+    filter: brightness(1.06);
+    text-decoration: none;
+  }
 }
 
 .experience-affiliation {
@@ -476,7 +566,7 @@ div.publication {
 
 .resource-card--tools {
   background:
-    radial-gradient(circle at top right, var(--accent-primary-soft), transparent 36%),
+    radial-gradient(circle at top right, rgba(174, 184, 254, 0.045), transparent 26%),
     linear-gradient(180deg, var(--surface-alt-bg) 0%, var(--surface-bg) 100%);
 }
 
@@ -695,7 +785,7 @@ div.publication {
   border: 1px solid var(--surface-border);
   border-radius: 18px;
   background:
-    radial-gradient(circle at top left, var(--accent-primary-soft), transparent 32%),
+    radial-gradient(circle at top left, rgba(174, 184, 254, 0.05), transparent 27%),
     linear-gradient(180deg, var(--surface-alt-bg) 0%, var(--surface-bg) 100%);
   box-shadow: var(--surface-shadow-strong);
   font-size: var(--content-copy-size);
@@ -743,6 +833,19 @@ div.publication {
   line-height: 1.25;
   letter-spacing: 0.2px;
   flex: 1 1 320px;
+  text-shadow: 0 0 22px rgba(148, 180, 255, 0.08);
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .publication-title {
+    background-image: var(--publication-title-gradient);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 
 .publication-authors,
@@ -831,11 +934,9 @@ span.highlight3 {
     z-index: -1;
     pointer-events: none;
     background-image:
-      radial-gradient(circle at top left, var(--page-radial-1), transparent 42%),
-      radial-gradient(circle at bottom right, var(--page-radial-2), transparent 40%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.018), rgba(255, 255, 255, 0)),
-      var(--paper-noise);
-    opacity: 0.46;
+      radial-gradient(circle at top center, var(--page-radial-1), transparent 38%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+    opacity: 0.32;
   }
   
   heading {
