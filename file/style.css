@@ -109,12 +109,13 @@
   );
   --experience-title-gradient: linear-gradient(
     96deg,
-    #f4fbfb 0%,
-    #d8f1ee 24%,
-    #aee1d9 50%,
-    #74c6ba 76%,
-    #4aa59f 100%
+    #fcfaff 0%,
+    #ebe2ff 24%,
+    #d4c0fb 50%,
+    #b59ae8 76%,
+    #8f72cf 100%
   );
+  --experience-title-hover: #cdb7ff;
   --education-title-gradient: linear-gradient(
     96deg,
     #fbfbf8 0%,
@@ -481,7 +482,7 @@ div.publication {
   font-size: 24px;
   line-height: 1.2;
   color: var(--text-heading);
-  text-shadow: 0 0 18px rgba(116, 198, 186, 0.08);
+  text-shadow: 0 0 18px rgba(181, 154, 232, 0.08);
 }
 
 .experience-title a,
@@ -491,7 +492,7 @@ div.publication {
 }
 
 .experience-title a:hover {
-  color: var(--accent-olive);
+  color: var(--experience-title-hover);
   text-decoration: none;
 }
 
