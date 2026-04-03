@@ -315,27 +315,27 @@ div.publication {
 }
 
 .interest-pill--gpu {
-  color: var(--accent-rose);
-  background: var(--accent-rose-soft);
-  border-color: var(--accent-rose-line);
+  color: #c59a94;
+  background: rgba(180, 154, 142, 0.18);
+  border-color: rgba(180, 154, 142, 0.30);
 }
 
 .interest-pill--trusted {
-  color: var(--accent-olive);
-  background: var(--accent-olive-soft);
-  border-color: var(--accent-olive-line);
+  color: #a6b58f;
+  background: rgba(154, 161, 143, 0.18);
+  border-color: rgba(154, 161, 143, 0.30);
 }
 
 .interest-pill--crypto {
   color: var(--accent-primary);
-  background: var(--accent-primary-soft);
-  border-color: var(--accent-primary-line);
+  background: rgba(174, 184, 254, 0.16);
+  border-color: rgba(174, 184, 254, 0.28);
 }
 
 .interest-pill--memory {
-  color: var(--accent-secondary);
-  background: var(--accent-secondary-soft);
-  border-color: var(--accent-secondary-line);
+  color: #d7bea3;
+  background: rgba(203, 188, 169, 0.18);
+  border-color: rgba(203, 188, 169, 0.30);
 }
 
 .interest-notes {
