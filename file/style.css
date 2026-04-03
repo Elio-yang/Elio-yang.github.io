@@ -899,6 +899,13 @@ div.publication {
   text-decoration: none;
 }
 
+.publication-link-btn {
+  appearance: none;
+  cursor: pointer;
+  font-family: 'Linux Libertine', serif;
+  line-height: 1.2;
+}
+
 span.venue {
   color: var(--link-color);
   font-weight: bold;

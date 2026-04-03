@@ -12,16 +12,20 @@
 </head>
 
 <script>
-	function toggle_abstract(btn) {
+	function toggle_publication_panel(btn, selector, closedLabel, openLabel) {
 	  const card = btn.closest(".publication-card");
-	  const absDiv = card ? card.querySelector(".abstract-text") : null;
-	  if (!absDiv) {
+	  const panel = card ? card.querySelector(selector) : null;
+	  if (!panel) {
 		return;
 	  }
 	  const isExpanded = btn.getAttribute("aria-expanded") === "true";
-	  absDiv.hidden = isExpanded;
+	  panel.hidden = isExpanded;
 	  btn.setAttribute("aria-expanded", String(!isExpanded));
-	  btn.textContent = isExpanded ? "Show Brief" : "Hide Brief";
+	  btn.textContent = isExpanded ? closedLabel : openLabel;
+	}
+
+	function toggle_abstract(btn) {
+	  toggle_publication_panel(btn, ".publication-brief", "Show Brief", "Hide Brief");
 	}
 </script>
 
@@ -265,7 +269,7 @@
 					<div class="publication-actions">
 						<button type="button" class="abstract-btn" aria-expanded="false" onclick="toggle_abstract(this)">Show Brief</button>
 					</div>
-					<div class="abstract-text" hidden>
+					<div class="abstract-text publication-brief" hidden>
 						<p>
 							Coming soon.
 						</p>
@@ -283,10 +287,15 @@
 						<a class="publication-link" href="https://dl.acm.org/doi/10.1145/3695053.3731040">PDF</a>
 						<a class="publication-link" href="./file/ISCA25_NetCrafter.pdf">Slides.pdf</a>
 						<a class="publication-link" href="./file/netcrafter_isca25.pptx">Slides.pptx</a>
-						<a class="publication-link" href="./coming">Code</a>
+						<button type="button" class="publication-link publication-link-btn" aria-expanded="false" onclick="toggle_publication_panel(this, '.publication-note', 'Code', 'Hide Code')">Code</button>
 						<button type="button" class="abstract-btn" aria-expanded="false" onclick="toggle_abstract(this)">Show Brief</button>
 					</div>
-					<div class="abstract-text" hidden>
+					<div class="abstract-text publication-note" hidden>
+						<p>
+							Coming soon.
+						</p>
+					</div>
+					<div class="abstract-text publication-brief" hidden>
 						<p>
 							We present <b>NetCrafter</b>, a set of novel techniques to manage network traffic, especially across low-bandwidth links in multi-GPU systems.
 							NetCrafter reduces the volume of flit traffic by (i) stitching compatible, partially filled flits, (ii) trimming unnecessary flits to avoid redundant transfers, and (iii) sequencing flits so that latency-sensitive ones arrive at their destinations faster.
@@ -304,11 +313,11 @@
 					<div class="publication-actions">
 						<a class="publication-link" href="https://ieeexplore.ieee.org/document/11096367">PDF</a>
 						<a class="publication-link" href="./file/ispass-25-slides.pdf">Talk@ISPASS</a>
-						<a class="publication-link" href="https://www.confidentialcomputingsummit.com/e/ccs25">Talk@CC-Summit</a>
-						<a class="publication-link" href="https://adwaitjog.github.io/docs/pdf/CCSummit-June18.pdf">Artifact Available</a>
+						<a class="publication-link" href="https://adwaitjog.github.io/docs/pdf/CCSummit-June18.pdf">Talk@CC-Summit</a>
+						<a class="publication-link" href="https://github.com/insight-cal-uva/hcc-ispass25-artifact">Artifact Available</a>
 						<button type="button" class="abstract-btn" aria-expanded="false" onclick="toggle_abstract(this)">Show Brief</button>
 					</div>
-					<div class="abstract-text" hidden>
+					<div class="abstract-text publication-brief" hidden>
 						<p>
 							Confidential computing (CC) is a critical technology for protecting data in use. By leveraging encryption and virtual machine (VM) level isolation, CC allows existing code to run without modification while offering confidentiality and integrity guarantees. However, the performance impact of CC in GPU-based systems can be significant. In this work, we present a comprehensive performance evaluation of CC guided by a simple performance model. Specifically, we start by evaluating CUDA applications with a focus on data transfer, memory management, encryption, kernel launch, and kernel execution. We also present a detailed event-level analysis of these applications, revealing that the execution times of kernels that do not use unified virtual memory (UVM) are mostly unaffected, while associated kernel launch overhead and queuing time increase significantly. On the other hand, the execution time of kernels using UVM increases drastically under CC, in addition to other launch and queuing overheads. We also study CNN training and LLM inference to see how CC overhead would affect them. Finally, we consider several optimization techniques, including kernel fusion, overlapping, and quantization, towards addressing the overheads of CC.
 						</p>
