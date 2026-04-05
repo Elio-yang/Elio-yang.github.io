@@ -125,7 +125,7 @@
     #b8b2a7 100%
   );
   --text-inverse: #131519;
-  --author-highlight: #ff8c00;
+  --author-highlight: #6ED4A8;
   --link-color: #aeb8fe;
   --link-hover: #b0dbee;
   --accent-primary: #aeb8fe;
@@ -552,7 +552,7 @@ div.publication {
   min-width: 78px;
   font-family: Georgia, serif;
   font-weight: bold;
-  color: var(--note-label-color);
+  color: #F3F2EE;
 }
 
 .info-card,
@@ -860,8 +860,9 @@ div.publication {
 }
 
 .publication-authors b {
-  color: var(--author-highlight);
   font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .publication-meta {
