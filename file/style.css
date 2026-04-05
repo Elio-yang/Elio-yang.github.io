@@ -143,8 +143,9 @@
   --divider-color: rgba(255, 255, 255, 0.08);
   --nav-bg: rgba(20, 22, 26, 0.82);
   --nav-border: rgba(255, 255, 255, 0.07);
-  --badge-bg: #20242A;
-  --badge-text: #DCE4F0;
+  --badge-bg: rgba(174, 184, 254, 0.06);
+  --badge-text: #E3EBFA;
+  --badge-border: rgba(174, 184, 254, 0.16);
   --badge-review-bg: #23211F;
   --badge-review-text: #D8C6B1;
   --button-bg: #1E2228;
