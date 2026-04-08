@@ -1006,10 +1006,10 @@ span.highlight3 {
   }
   
   heading {
-    font-family: Georgia;
+    font-family: 'Trajan Pro 3', Georgia, serif;
     color: var(--section-heading);
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 700;
     margin-top: 0px;
     margin-bottom: 0px;
     text-decoration: underline;
