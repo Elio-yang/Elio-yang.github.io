@@ -71,6 +71,54 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Trajan Pro 3';
+  src: url('../font/TrajanPro3-font/TrajanPro3ExtraLight.woff2') format('woff2'),
+       url('../font/TrajanPro3-font/TrajanPro3ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trajan Pro 3';
+  src: url('../font/TrajanPro3-font/TrajanPro3Light.woff2') format('woff2'),
+       url('../font/TrajanPro3-font/TrajanPro3Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trajan Pro 3';
+  src: url('../font/TrajanPro3-font/TrajanPro3Regular.woff2') format('woff2'),
+       url('../font/TrajanPro3-font/TrajanPro3Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trajan Pro 3';
+  src: url('../font/TrajanPro3-font/TrajanPro3SemiBold.woff2') format('woff2'),
+       url('../font/TrajanPro3-font/TrajanPro3SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trajan Pro 3';
+  src: url('../font/TrajanPro3-font/TrajanPro3Bold.woff2') format('woff2'),
+       url('../font/TrajanPro3-font/TrajanPro3Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trajan Pro 3';
+  src: url('../font/TrajanPro3-font/TrajanPro3Black.woff2') format('woff2'),
+       url('../font/TrajanPro3-font/TrajanPro3Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
 :root {
   --content-copy-size: 18px;
   --page-bg: #0b0b0f;
@@ -200,7 +248,8 @@ div.canvas > * {
 }
 
 name {
-  font-family: Georgia, 'consolaslxgw';
+  font-family: 'Trajan Pro 3', Georgia, 'consolaslxgw';
+  font-weight: 700;
   font-size: 40px;
   color: var(--text-heading);
 }
@@ -354,9 +403,9 @@ div.publication {
 
 .interest-note-label {
   margin: 0;
-  font-family: Georgia, serif;
+  font-family: 'Trajan Pro 3', Georgia, serif;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0.3px;
   text-transform: uppercase;
   color: var(--note-label-color);
@@ -862,6 +911,13 @@ div.publication {
 
 .publication-authors b {
   font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.publication-authors .author-self {
+  font-family: 'Trajan Pro 3', Georgia, serif;
+  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
