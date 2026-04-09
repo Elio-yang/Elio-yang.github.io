@@ -73,6 +73,14 @@
 
 @font-face {
   font-family: 'Trajan Pro 3';
+  src: url('../font/TrajanPro3-font/TrajanPro3SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trajan Pro 3';
   src: url('../font/TrajanPro3-font/TrajanPro3Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
@@ -318,8 +326,9 @@ div.publication {
   justify-content: center;
   padding: 6px 13px;
   border-radius: 999px;
+  font-family: 'Trajan Pro 3', Georgia, serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0.2px;
   border: 1px solid transparent;
 }
@@ -422,7 +431,8 @@ div.publication {
 
 .education-degree {
   margin: 0;
-  font-family: Georgia, serif;
+  font-family: 'Trajan Pro 3', Georgia, serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
   color: var(--text-heading);
@@ -443,6 +453,8 @@ div.publication {
 
 .education-school {
   margin: 4px 0 0;
+  font-family: 'Trajan Pro 3', Georgia, serif;
+  font-weight: 600;
   color: var(--text-secondary);
   font-size: var(--content-copy-size);
 }
@@ -641,6 +653,17 @@ div.publication {
   border-top: none;
 }
 
+.award-conf {
+  font-family: 'Trajan Pro 3', Georgia, serif;
+  font-weight: 600;
+}
+
+.service-emphasis,
+.service-emphasis:visited {
+  font-family: 'Trajan Pro 3', Georgia, serif;
+  font-weight: 700;
+}
+
 .tool-group {
   padding: 0;
 }
@@ -823,8 +846,9 @@ div.publication {
   border-radius: 999px;
   background: var(--badge-bg);
   color: var(--badge-text);
+  font-family: 'Trajan Pro 3', Georgia, serif;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0.2px;
   line-height: 1.15;
   text-align: center;
@@ -1153,9 +1177,9 @@ span.highlight3 {
 }
 
 .news-month {
-  font-family: Georgia, serif;
+  font-family: 'Trajan Pro 3', Georgia, serif;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   color: var(--accent-primary);
@@ -1191,6 +1215,24 @@ span.highlight3 {
 .news-card a:hover {
   color: var(--link-hover);
   text-decoration-color: var(--accent-secondary-line);
+}
+
+.news-card a.news-conf,
+.news-card a.news-conf:visited {
+  font-family: 'Trajan Pro 3', Georgia, serif;
+  font-weight: 700;
+}
+
+.news-card a.news-brand,
+.news-card a.news-brand:visited {
+  font-family: 'Trajan Pro 3', Georgia, serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.news-card a.news-brand--nvidia,
+.news-card a.news-brand--nvidia:visited {
+  color: #76B900;
 }
 
 .navbar {
