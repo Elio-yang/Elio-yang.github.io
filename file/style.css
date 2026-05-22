@@ -186,8 +186,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 110px;
-  /* border-radius: 90%; */
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1214 / 1296;
+  /* border-radius: 10%; */
   box-shadow: 0 0 0 0.1em rgba(255, 255, 255, 0.14);
 }
 
@@ -223,6 +226,7 @@ name {
 }
 
 .identity-block {
+  margin-top: 8px;
   color: #e4e0ff;
   text-shadow: 0 0 18px rgba(142, 147, 216, 0.06);
 }
