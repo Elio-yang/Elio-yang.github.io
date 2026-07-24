@@ -6,7 +6,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'Linux Libertine'; /* bold */
   src: url('../font/LinLibertine_Bd.woff') format('woff');
@@ -259,6 +258,41 @@ div.container {
   margin: 20px;
   margin-bottom: 35px;
   color: var(--text-primary);
+}
+
+.profile-header-grid {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.profile-header #avatar {
+  margin: 0;
+}
+
+.profile-summary {
+  min-width: 0;
+}
+
+.profile-header .identity-block {
+  margin: 0;
+  text-align: left;
+}
+
+.profile-links {
+  margin: 14px 0 0;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.55;
+  white-space: nowrap;
+}
+
+.profile-header .intro-panel {
+  margin-top: 18px;
 }
 
 .intro-panel {
@@ -826,7 +860,7 @@ div.publication {
     radial-gradient(circle at top left, rgba(174, 184, 254, 0.05), transparent 27%),
     linear-gradient(180deg, var(--surface-alt-bg) 0%, var(--surface-bg) 100%);
   box-shadow: var(--surface-shadow-strong);
-  font-size: var(--content-copy-size);
+  font-size: 17px;
 }
 
 .publication-card--review {
@@ -851,7 +885,7 @@ div.publication {
   background: var(--badge-bg);
   color: var(--badge-text);
   font-family: 'Trajan Pro 3', Georgia, serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.2px;
   line-height: 1.15;
@@ -868,7 +902,7 @@ div.publication {
   font-family: Georgia, serif;
   color: var(--text-heading);
   margin: 0;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 1.25;
   letter-spacing: 0.2px;
   flex: 1 1 320px;
@@ -913,7 +947,7 @@ div.publication {
 .publication-meta {
   margin-top: 8px;
   color: var(--text-secondary);
-  font-size: var(--content-copy-size);
+  font-size: 17px;
 }
 
 .publication-actions {
@@ -934,7 +968,7 @@ div.publication {
   border: 1px solid var(--button-border);
   background: var(--button-bg);
   color: var(--link-color);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -1094,7 +1128,7 @@ span.highlight3 {
     cursor: pointer;
     font-weight: bold;
     display: inline-block;
-    font-size: 17px;
+    font-size: 16px;
     font-family: 'Linux Libertine', serif;
     padding: 8px 14px;
   }
@@ -1297,6 +1331,30 @@ html {
         font-size: 34px;
     }
 
+    .profile-header-grid {
+        grid-template-columns: 110px minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .profile-header #avatar {
+        width: 110px;
+    }
+
+    .profile-header name {
+        font-size: 30px;
+    }
+
+    .profile-header .identity-block .identity-meta {
+        font-size: 16px;
+    }
+
+    .profile-links {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        white-space: normal;
+    }
+
     heading {
         font-size: 22px;
     }
@@ -1431,7 +1489,7 @@ html {
     }
 
     .publication-title {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .publication-link,
@@ -1472,3 +1530,358 @@ html {
     }
 
 }
+
+/* === NVIDIA / APPLE LIGHT-DARK THEME — START ===
+   Theme color tokens and switch styling are isolated in this block. */
+
+:root {
+  color-scheme: light;
+  --page-bg: #f5f5f7;
+  --page-radial-1: transparent;
+  --page-radial-2: transparent;
+  --canvas-bg: #ffffff;
+  --canvas-border: #d2d2d7;
+  --canvas-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  --surface-bg: #f7f7f8;
+  --surface-alt-bg: #f7f7f8;
+  --surface-soft: #fafafa;
+  --surface-border: #d2d2d7;
+  --surface-shadow: none;
+  --surface-shadow-strong: none;
+  --text-primary: #1d1d1f;
+  --text-secondary: #515154;
+  --text-tertiary: #6e6e73;
+  --text-heading: #1d1d1f;
+  --section-heading: #1d1d1f;
+  --section-heading-line: #76b900;
+  --author-highlight: #4f7300;
+  --link-color: #0066cc;
+  --link-hover: #004f9f;
+  --accent-primary: #76b900;
+  --accent-primary-soft: rgba(118, 185, 0, 0.1);
+  --accent-primary-line: rgba(79, 115, 0, 0.24);
+  --accent-secondary: #6e6e73;
+  --accent-secondary-soft: rgba(0, 0, 0, 0.035);
+  --accent-secondary-line: rgba(0, 0, 0, 0.1);
+  --accent-olive: #6e6e73;
+  --accent-olive-soft: rgba(0, 0, 0, 0.035);
+  --accent-olive-line: rgba(0, 0, 0, 0.1);
+  --accent-rose: #6e6e73;
+  --accent-rose-soft: rgba(0, 0, 0, 0.035);
+  --accent-rose-line: rgba(0, 0, 0, 0.1);
+  --divider-color: rgba(0, 0, 0, 0.1);
+  --nav-bg: rgba(255, 255, 255, 0.92);
+  --nav-border: #d2d2d7;
+  --badge-bg: rgba(118, 185, 0, 0.1);
+  --badge-text: #4f7300;
+  --badge-border: rgba(79, 115, 0, 0.24);
+  --badge-review-bg: #ededf0;
+  --badge-review-text: #515154;
+  --button-bg: #f5f5f7;
+  --button-border: #d2d2d7;
+  --button-hover: #e8e8ed;
+  --button-active-bg: #76b900;
+  --button-active-border: #76b900;
+  --button-active-text: #10120d;
+  --timeline-line: rgba(0, 0, 0, 0.12);
+  --timeline-dot: #76b900;
+  --note-label-color: #4f7300;
+  --footer-color: #6e6e73;
+  --logo-border: #d2d2d7;
+  --logo-shadow: none;
+  --highlight-red: #515154;
+  --highlight-green: #4f7300;
+  --highlight-emphasis: #3a3a3c;
+  --theme-ring: #d2d2d7;
+  --theme-pill-text: #3a3a3c;
+  --theme-pill-bg: #f1f1f3;
+  --theme-pill-border: #d2d2d7;
+  --theme-green-text: #4f7300;
+  --theme-review-line: #8e8e93;
+  --theme-logo-bg: #ffffff;
+  --theme-tag-bg: #ededf0;
+  --theme-tag-border: #d2d2d7;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --page-bg: #0b0b0f;
+  --page-radial-1: rgba(255, 255, 255, 0.03);
+  --page-radial-2: rgba(110, 126, 158, 0.05);
+  --canvas-bg: rgba(15, 17, 21, 0.95);
+  --canvas-border: rgba(255, 255, 255, 0.08);
+  --canvas-shadow: 0 30px 72px rgba(0, 0, 0, 0.42);
+  --surface-bg: #17191d;
+  --surface-alt-bg: #1b1e23;
+  --surface-soft: #14171b;
+  --surface-border: #2a2e36;
+  --surface-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+  --surface-shadow-strong: 0 16px 36px rgba(0, 0, 0, 0.3);
+  --text-primary: #f3f2ee;
+  --text-secondary: #b5b2aa;
+  --text-tertiary: #8e918f;
+  --text-heading: #faf8f3;
+  --section-heading: #c4d1e6;
+  --section-heading-line: rgba(174, 184, 254, 0.26);
+  --author-highlight: #6ed4a8;
+  --link-color: #aeb8fe;
+  --link-hover: #b0dbee;
+  --accent-primary: #aeb8fe;
+  --accent-primary-soft: rgba(212, 220, 232, 0.1);
+  --accent-primary-line: rgba(212, 220, 232, 0.18);
+  --accent-secondary: #cbbca9;
+  --accent-secondary-soft: rgba(203, 188, 169, 0.1);
+  --accent-secondary-line: rgba(203, 188, 169, 0.18);
+  --accent-olive: #9aa18f;
+  --accent-olive-soft: rgba(154, 161, 143, 0.1);
+  --accent-olive-line: rgba(154, 161, 143, 0.18);
+  --accent-rose: #b49a8e;
+  --accent-rose-soft: rgba(180, 154, 142, 0.1);
+  --accent-rose-line: rgba(180, 154, 142, 0.18);
+  --divider-color: rgba(255, 255, 255, 0.08);
+  --nav-bg: rgba(20, 22, 26, 0.82);
+  --nav-border: rgba(255, 255, 255, 0.07);
+  --badge-bg: rgba(174, 184, 254, 0.06);
+  --badge-text: #e3ebfa;
+  --badge-border: rgba(174, 184, 254, 0.16);
+  --badge-review-bg: #23211f;
+  --badge-review-text: #d8c6b1;
+  --button-bg: #1e2228;
+  --button-border: #313641;
+  --button-hover: #282d34;
+  --button-active-bg: #e7e4dd;
+  --button-active-border: #e7e4dd;
+  --button-active-text: #111318;
+  --timeline-line: rgba(212, 220, 232, 0.14);
+  --timeline-dot: #dce4f0;
+  --note-label-color: #ffcda2;
+  --footer-color: #9298a1;
+  --logo-border: rgba(255, 255, 255, 0.07);
+  --logo-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  --highlight-red: #d8c6b1;
+  --highlight-green: #aeb8a6;
+  --highlight-emphasis: #e7d8c5;
+  --theme-ring: rgba(255, 255, 255, 0.14);
+  --theme-green-text: #aeb8fe;
+}
+
+html[data-theme="light"] body::before,
+html[data-theme="light"] div.canvas::before {
+  background: none;
+  opacity: 0;
+}
+
+#avatar {
+  box-shadow: 0 0 0 1px var(--theme-ring);
+}
+
+.navbar {
+  background: var(--nav-bg);
+  border-bottom-color: var(--nav-border);
+}
+
+.navbar a,
+.navbar a:visited {
+  color: var(--text-heading);
+}
+
+.navbar a:hover {
+  color: var(--link-hover);
+}
+
+.theme-toggle {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-left: 10px;
+  padding: 0;
+  vertical-align: middle;
+  color: var(--text-heading);
+  background: var(--button-bg);
+  border: 1px solid var(--button-border);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.theme-toggle:hover {
+  color: var(--theme-green-text);
+  background: var(--button-hover);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}
+
+.theme-icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-icon--sun {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-icon--moon {
+  display: none;
+}
+
+html[data-theme="dark"] .theme-icon--sun {
+  display: block;
+}
+
+html[data-theme="light"] .identity-block {
+  color: var(--text-heading);
+  text-shadow: none;
+}
+
+html[data-theme="light"] .identity-block name {
+  background-image: none;
+  -webkit-text-fill-color: var(--text-heading);
+  color: var(--text-heading);
+}
+
+html[data-theme="light"] .identity-block .identity-meta {
+  background-image: none;
+  -webkit-text-fill-color: var(--text-secondary);
+  color: var(--text-secondary);
+}
+
+html[data-theme="light"] .intro-panel,
+html[data-theme="light"] .interests-panel,
+html[data-theme="light"] .education-card,
+html[data-theme="light"] .experience-card,
+html[data-theme="light"] .info-card,
+html[data-theme="light"] .resource-card,
+html[data-theme="light"] .publication-card,
+html[data-theme="light"] .publication-card--review,
+html[data-theme="light"] .news-card,
+html[data-theme="light"] .news-date,
+html[data-theme="light"] .abstract-text {
+  border-color: var(--surface-border);
+  border-radius: 8px;
+  background: var(--surface-bg);
+  box-shadow: none;
+}
+
+.intro-panel,
+.interests-panel,
+.education-card,
+.experience-card,
+.info-card,
+.resource-card,
+.publication-card,
+.publication-card--review,
+.news-card,
+.abstract-text {
+  border-radius: 6px;
+}
+
+html[data-theme="light"] .education-degree,
+html[data-theme="light"] .experience-title,
+html[data-theme="light"] .experience-title a,
+html[data-theme="light"] .experience-title a:visited,
+html[data-theme="light"] .publication-title {
+  background-image: none;
+  -webkit-text-fill-color: var(--text-heading);
+  color: var(--text-heading);
+  text-shadow: none;
+}
+
+html[data-theme="light"] .experience-title a:hover {
+  color: var(--link-hover);
+  -webkit-text-fill-color: var(--link-hover);
+  filter: none;
+}
+
+html[data-theme="light"] .experience-label {
+  color: var(--text-heading);
+}
+
+html[data-theme="light"] .interest-pill--gpu,
+html[data-theme="light"] .interest-pill--trusted,
+html[data-theme="light"] .interest-pill--crypto,
+html[data-theme="light"] .interest-pill--memory {
+  color: var(--theme-pill-text);
+  background: var(--theme-pill-bg);
+  border-color: var(--theme-pill-border);
+}
+
+html[data-theme="light"] .interest-note-label,
+html[data-theme="light"] .publication-badge,
+html[data-theme="light"] .news-month {
+  color: var(--theme-green-text);
+}
+
+html[data-theme="light"] .publication-card {
+  border-left: 3px solid #76b900;
+}
+
+html[data-theme="light"] .publication-card--review {
+  border-left-color: var(--theme-review-line);
+}
+
+.publication-link,
+.publication-link:visited,
+.abstract-btn {
+  color: var(--link-color);
+  background: var(--button-bg);
+  border-color: var(--button-border);
+}
+
+.publication-link:hover,
+.abstract-btn:hover {
+  color: var(--link-hover);
+  background: var(--button-hover);
+}
+
+html[data-theme="light"] .news-card a.news-brand--nvidia,
+html[data-theme="light"] .news-card a.news-brand--nvidia:visited,
+html[data-theme="light"] .intro-panel a.news-brand--nvidia,
+html[data-theme="light"] .intro-panel a.news-brand--nvidia:visited {
+  color: var(--theme-green-text);
+}
+
+html[data-theme="light"] .education-logo {
+  background: var(--theme-logo-bg);
+  box-shadow: none;
+}
+
+html[data-theme="light"] .info-tag,
+html[data-theme="light"] .education-period,
+html[data-theme="light"] .experience-period {
+  color: var(--text-secondary);
+  background: var(--theme-tag-bg);
+  border-color: var(--theme-tag-border);
+}
+
+html[data-theme="light"] .tool-list li::before,
+html[data-theme="light"] .memo-list li::before {
+  background: #76b900;
+}
+
+@media (max-width: 700px) {
+  .theme-toggle {
+    width: 32px;
+    height: 32px;
+    margin-left: 0;
+    flex: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle {
+    transition: none;
+  }
+}
+
+/* === NVIDIA / APPLE LIGHT-DARK THEME — END === */
