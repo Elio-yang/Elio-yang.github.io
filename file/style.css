@@ -340,6 +340,46 @@ div.container {
   margin-top: 18px;
 }
 
+.internship-callout {
+  margin-top: 14px;
+  padding: 14px 18px;
+  border: 1px solid var(--callout-border);
+  border-left: 3px solid var(--callout-accent);
+  border-radius: 6px;
+  background: var(--callout-bg);
+}
+
+.internship-callout-label {
+  margin: 0 0 6px;
+  font-family: 'Trajan Pro 3', Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--callout-text);
+}
+
+.internship-callout-text {
+  margin: 0;
+  font-size: var(--content-copy-size);
+  line-height: 1.55;
+  color: var(--text-primary);
+}
+
+.internship-callout strong,
+.internship-callout em {
+  color: var(--callout-text);
+}
+
+.internship-callout a,
+.internship-callout a:visited {
+  color: var(--link-color);
+}
+
+.internship-callout a:hover {
+  color: var(--link-hover);
+}
+
 .intro-panel {
   margin-top: 12px;
   padding: 16px 18px;
@@ -1436,6 +1476,10 @@ html {
         font-size: 20px;
     }
 
+    .internship-callout {
+        padding: 12px 14px;
+    }
+
     .interests-panel {
         padding: 15px;
         border-radius: 18px;
@@ -1655,6 +1699,10 @@ html {
   --theme-logo-bg: #ffffff;
   --theme-tag-bg: #ededf0;
   --theme-tag-border: #d2d2d7;
+  --callout-bg: #fdf6ee;
+  --callout-border: #ecd9c3;
+  --callout-accent: #d9822b;
+  --callout-text: #a1500f;
 }
 
 html[data-theme="dark"] {
@@ -1717,6 +1765,10 @@ html[data-theme="dark"] {
   --highlight-emphasis: #e7d8c5;
   --theme-ring: rgba(255, 255, 255, 0.14);
   --theme-green-text: #aeb8fe;
+  --callout-bg: rgba(255, 205, 162, 0.05);
+  --callout-border: rgba(255, 205, 162, 0.16);
+  --callout-accent: #ffcda2;
+  --callout-text: #ffcda2;
 }
 
 html[data-theme="light"] body::before,
@@ -1916,6 +1968,10 @@ html[data-theme="light"] .experience-period {
   color: var(--text-secondary);
   background: var(--theme-tag-bg);
   border-color: var(--theme-tag-border);
+}
+
+html[data-theme="light"] .internship-callout {
+  border-radius: 8px;
 }
 
 html[data-theme="light"] .tool-list li::before,
